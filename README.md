@@ -1,4 +1,4 @@
-# Dawn E. Collett - Talks
+# Talks, Workshops, and Other Presentations
 
 Hello! This repository 
 
