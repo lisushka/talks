@@ -4,6 +4,7 @@ Hello! This repository is a source of truth for all of the presentations and wor
 
 - [Talks](#talks)
 - [Workshops](#workshops)
+- [Panels](#panels)
 - [Lightning Talks](#lightning-talks)
 
 ## Talks
@@ -19,6 +20,12 @@ These are hands-on workshops that you can complete in your own time.  The Reposi
 
 - **Securing AWS API Gateway with Lambda authorisers**: [repository](https://github.com/lisushka/secure-api-gateway) Melbourne AWS Programming and Tools, 2020-10
 - **Securing EC2 instances - the basics and more**: [repository](https://github.com/lisushka/secure-ec2) Melbourne AWS Programming and Tools, 2019-11
+
+## Panels
+
+This is a list of all of the panel events that I've been involved in.  The list of names is the other people who were on the panel with me, and their names link to their public profiles.
+
+- **Nothing About Us Without Us! Challenging companies and assistive technologies to do better** (with [Florian Beijers](https://twitter.com/zersiax) and [Ben Mustill-Rose](https://twitter.com/bmustillrose)): [video, open captions on live delay](https://www.youtube.com/watch?v=eYKe6si3Q9Y) Accessibility Manchester, 2020-12-01
 
 ## Lightning Talks
 
