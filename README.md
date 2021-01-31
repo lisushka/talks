@@ -33,4 +33,4 @@ The talks in this section are generally 15 to 20 minutes long, with minimal back
 
 - **FinOps 101: How to Stop Your Cloud Workload from Breaking the Bank**: ([video](https://youtube.com/watch?v=AgE-sZFN308&t=1885)|[transcript]()) Melbourne AWS User Group, 2020-08
 - **Build from the Ground Up with AWS Control Tower**: ([video](https://youtube.com/watch?v=h8XEyF_k8dE&t=2021)|[transcript]()) Melbourne AWS User Group, 2020-06
-- **Automating security checks with Amazon Inspector**: ([video]()|[transcript]()) Melbourne AWS User Group, 2020-04
+- **Automating security checks with Amazon Inspector**: ([video](https://youtube.com/watch?v=iBlnPqmccNQ&t=1665)|[transcript]()) Melbourne AWS User Group, 2020-04
