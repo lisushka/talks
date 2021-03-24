@@ -31,6 +31,7 @@ These are hands-on workshops that you can complete in your own time.  The Reposi
 
 The talks in this section are generally 15 to 20 minutes long, with minimal background research involved.
 
+- **You're Stronger Than You Think**: (not recorded) Women Who Code Brisbane, 2021-03-23
 - **Finding the right tools for your new job**: ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/right-tools.md)) AWS She Builds Day, 2021-03-11
 - **FinOps 101: How to Stop Your Cloud Workload from Breaking the Bank**: ([video](https://youtube.com/watch?v=AgE-sZFN308&t=1885)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/finops.md)) Melbourne AWS User Group, 2020-08
 - **Build from the Ground Up with AWS Control Tower**: ([video](https://youtube.com/watch?v=h8XEyF_k8dE&t=2021)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/control-tower.md)) Melbourne AWS User Group, 2020-06
