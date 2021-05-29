@@ -39,6 +39,7 @@ The Kubernetes documentation has a [Security section](https://kubernetes.io/docs
   - [Documentation](https://istio.io/latest/docs/)
   - [Source code](https://github.com/istio/istio)
   - [Helm chart](https://github.com/istio/istio/tree/master/manifests/charts)
+
 **NOTE:** As there are multiple options for Kubernetes service meshes, and they all have slightly different functionality, I recommend doing a comparison before making a decision about which service mesh to use.
 
 ## Other Sources
