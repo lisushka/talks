@@ -1,6 +1,6 @@
 # Obscure Security on Kubernetes - Transcript
 
-[DAWN]: Hello everyone!  Ah, it's been a while since I've been here, erm, and - I do appreciate that Rob has said that I need no introduction.  I have indeed been working more on security lately, and so today, I would like to take you through 'Obscure Security on Kubernetes'.  Do you have no idea what that means?  Cool!  Because I also had absolutely no idea what that meant, until I started delving into the wold of Kubernetes security.  So let me take you through it.
+DAWN: Hello everyone!  Ah, it's been a while since I've been here, erm, and - I do appreciate that Rob has said that I need no introduction.  I have indeed been working more on security lately, and so today, I would like to take you through 'Obscure Security on Kubernetes'.  Do you have no idea what that means?  Cool!  Because I also had absolutely no idea what that meant, until I started delving into the wold of Kubernetes security.  So let me take you through it.
 
 First of all, I would like to acknowledge the Wurundjeri people of the Kulin Nation, on whose land I am presenting today.  This is, and always will be, Aboriginal land.  Their sovereignty was never ceded.
 
