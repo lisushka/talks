@@ -2,10 +2,10 @@
 
 Hello! This repository is a source of truth for all of the presentations and workshops that I've given at public events.
 
-- [Talks](#talks)
+- [Conference Talks](#talks)
 - [Panels](#panels)
 - [Workshops](#workshops)
-- [Lightning Talks](#lightning-talks)
+- [Short Talks](#lightning-talks)
 
 ## Conference Talks
 
@@ -27,7 +27,7 @@ These are hands-on workshops that you can complete in your own time.  The Reposi
 - **Securing AWS API Gateway with Lambda authorisers**: ([repository](https://github.com/lisushka/secure-api-gateway)) Melbourne AWS Programming and Tools, 2020-10
 - **Securing EC2 instances - the basics and more**: ([repository](https://github.com/lisushka/secure-ec2)) Melbourne AWS Programming and Tools, 2019-11
 
-## Lightning Talks
+## Short Talks
 
 The talks in this section are generally 15 to 20 minutes long, with minimal background research involved.
 
