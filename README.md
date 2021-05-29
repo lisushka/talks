@@ -24,8 +24,8 @@ This is a list of all of the panel events that I've been involved in.  The list 
 
 These are hands-on workshops that you can complete in your own time.  The Repository link will take you to a Github repository with all of the source code, and step-by-step instructions to complete the workshop.
 
-- **Securing AWS API Gateway with Lambda authorisers**: ([repository](https://github.com/lisushka/secure-api-gateway)) Melbourne AWS Programming and Tools, 2020-10
-- **Securing EC2 instances - the basics and more**: ([repository](https://github.com/lisushka/secure-ec2)) Melbourne AWS Programming and Tools, 2019-11
+- **Securing AWS API Gateway with Lambda authorisers**: ([repository](https://github.com/lisushka/secure-api-gateway)) Melbourne AWS Programming and Tools, 2020-10-14
+- **Securing EC2 instances - the basics and more**: ([repository](https://github.com/lisushka/secure-ec2)) Melbourne AWS Programming and Tools, 2019-11-13
 
 ## Short Talks
 
