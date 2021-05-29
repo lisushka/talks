@@ -7,7 +7,7 @@ Hello! This repository is a source of truth for all of the presentations and wor
 - [Workshops](#workshops)
 - [Lightning Talks](#lightning-talks)
 
-## Talks
+## Conference Talks
 
 The talks in this section rely on extensive background research.  The Sources links go to separate repositories, with links to recordings of the talk and references that I used while putting it together.
 
@@ -31,8 +31,9 @@ These are hands-on workshops that you can complete in your own time.  The Reposi
 
 The talks in this section are generally 15 to 20 minutes long, with minimal background research involved.
 
+- **Obscure Security on Kubernetes**: ([video](https://youtube.com/watch?v=T9PDcKDHjAI&t=2128)|[sources](https://github.com/lisushka/talks/blob/main/sources/obscure-security.md)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/obscure-security.md)) Melbourne AWS User Group, 2021-05-26
 - **You're Stronger Than You Think**: (not recorded) Women Who Code Brisbane, 2021-03-23
 - **Finding the right tools for your new job**: ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/right-tools.md)) AWS She Builds Day, 2021-03-11
-- **FinOps 101: How to Stop Your Cloud Workload from Breaking the Bank**: ([video](https://youtube.com/watch?v=AgE-sZFN308&t=1885)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/finops.md)) Melbourne AWS User Group, 2020-08
-- **Build from the Ground Up with AWS Control Tower**: ([video](https://youtube.com/watch?v=h8XEyF_k8dE&t=2021)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/control-tower.md)) Melbourne AWS User Group, 2020-06
-- **Automating security checks with Amazon Inspector**: ([video](https://youtube.com/watch?v=iBlnPqmccNQ&t=1665)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/amazon-inspector.md)) Melbourne AWS User Group, 2020-04
+- **FinOps 101: How to Stop Your Cloud Workload from Breaking the Bank**: ([video](https://youtube.com/watch?v=AgE-sZFN308&t=1885)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/finops.md)) Melbourne AWS User Group, 2020-08-26
+- **Build from the Ground Up with AWS Control Tower**: ([video](https://youtube.com/watch?v=h8XEyF_k8dE&t=2021)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/control-tower.md)) Melbourne AWS User Group, 2020-06-24
+- **Automating security checks with Amazon Inspector**: ([video](https://youtube.com/watch?v=iBlnPqmccNQ&t=1665)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/amazon-inspector.md)) Melbourne AWS User Group, 2020-04-29
