@@ -78,7 +78,7 @@ DAWN: Yeah, I will do that.
 
 ARJEN: Great.  Erm, I don't see any other questions coming up. 
 
-DAWN: I think I did vaguely see one when I looked about AWS secrets manager, and the answer to that, erm, Secrets Manager and HashiCorp Vault are interchangeable for some things, but a lot of the default Kubernetes workloads that you would use would be more so things that would use KMS, hence why, KMS is - things like mutual TLS, which is a lot of what's mentioned in the basics, that will tend to be stuff that's backed more by KMS than, erm, Secrets Manager, but Secrets Manager is really good for if you want to take secrets and integrate them into your workload, rather than just have somewhere to store encryption keys and certificates that you're using for mutual TLS.
+DAWN: I think I did vaguely see one when I looked about AWS Secrets Manager, and the answer to that, erm, Secrets Manager and HashiCorp Vault are interchangeable for some things, but a lot of the default Kubernetes workloads that you would use would be more so things that would use KMS, hence why, KMS is - things like mutual TLS, which is a lot of what's mentioned in the basics, that will tend to be stuff that's backed more by KMS than, erm, Secrets Manager, but Secrets Manager is really good for if you want to take secrets and integrate them into your workload, rather than just have somewhere to store encryption keys and certificates that you're using for mutual TLS.
 
 ARJEN: Cool, makes sense.  Ah, I think that's it then.  Nobody else has jumped up with a question, so I'm assuming that means everybody is now all up to date on obscure Kubernetes security.  So Dawn, thank you again. 
 
