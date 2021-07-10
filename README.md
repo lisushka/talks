@@ -11,6 +11,7 @@ Hello! This repository is a source of truth for all of the presentations and wor
 
 The talks in this section rely on extensive background research.  The Sources links go to separate repositories, with links to recordings of the talk and references that I used while putting it together.
 
+- **Accessibility Overlays: A Cautionary Tale**: [sources](https://github.com/lisushka/overlays)
 - **The Privacy Tax**: [sources](https://github.com/lisushka/privacy-tax)
 - **This Talk Has Been Disabled**: [sources](https://github.com/lisushka/tthbd)
 
