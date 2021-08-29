@@ -102,7 +102,7 @@ ARJEN: Yeah, ah, I am not intelligent, I could also misunderstood it.  So did an
 
 DAWN: Mhm.
 
-ARJEN: 'I am a data analyst and has started preparing for the solution. architect associate exam. My question is: do companies entertain people who are certified but have no professional experience on AWS?'
+ARJEN: 'I am a data analyst and has started preparing for the Solution Architect Associate exam. My question is: do companies entertain people who are certified but have no professional experience on AWS?'
 
 DAWN: I think - I'm not sure how related that is to what I'm talking about, I think that's probably one for the slack or for the, ah, for the catch-up afterwards.
 
