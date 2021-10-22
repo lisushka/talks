@@ -1,4 +1,4 @@
-# Build from the Ground Up with AWS Control Tower
+# Build from the Ground Up with AWS Control Tower - Transcript
 
 ROB: Thanks, guys.  So, up first tonight, we have Dawn.  Erm, Dawn has recorded us another presentation again - erm, she's [sic] a regular contributor now to the Melbourne AWS User Group, we're really thankful for the effort that she puts into these presentations.  Ah, so without further ado, we'll throw over to the great introduction, I hope, to Control Tower.  I'm looking forward to this one.
 
@@ -89,6 +89,24 @@ The third use case is, if you are- part of a company that's undertaking a cloud 
 
 So this- we've reached the end of the talk.  If you do have any questions about using Control Tower, I am happy to answer them.  I was also contacted by- some of the folks at AWS who are interested in- whether they might be able to help get people who want to use Control Tower in touch with their solutions architects.  So, if that's something that you're interested in, if this has piqued your interest and you want some information on how you might use it, then use the QR code on this slide to get yourself in touch with AWS, and they'll put you in contact with a solutions architect who should be able to help.  Also, that QR code does have some speaker feedback for me.  I don't mind whether you fill that in or not - if you feel so inclined to, go ahead, if you don't, then don't.  I'm always interested to hear feedback from people, whether it be through that or personally, but whatever you prefer to do is totally fine by me.  So that concludes the talk, and I do hope that the information in this talk will at some point allow you to improve your systems by close of business Friday.
 
+ARJEN: Thanks, Dawn.  That was an excellent presentation again.  Erm, this is the time where everybody who hasn't asked a question yet can quickly do so.  Meantime, we have JM to thank for a couple of them, so let's start with those.  JM's first question is: does Control Tower support GuardDuty or does that need to be installed with CloudFormation?
 
+DAWN: Erm - admittedly, when I did all of this, I did it the ClickOps version, because Control Tower itself does not have programmatic support, but if you want to enable GuardDuty, you need to do that within GuardDuty.  There's no button in Control Tower that you can click that will allow you to just enable GuardDuty along with it.
+
+ARJEN: And then, I think - a related question. Have you been using the customisations for the universe control tower to deploy things like VPCs or Transit Gateway? 
+
+DAWN: Ooo - that was a fun one.  I- dabbled in it a very tiny bit trying to work out what- what the parameters of it were. The issue that I ran up against, and it's something that I highlight in the talk, is- Control Tower is really really bleeding-edge, and I have a feeling that in six to twelve months, it is going to look very different, and it is not something that I was inclined to- look at too much when the solution itself is not particularly mature, because I would generally want to be able to keep doing- things that I currently do programmatically, I'd want to be able to keep doing that.  And it- from the little bit that I looked at it, it didn't seem to me that there was as much flexibility in the customisations as I would want.
+
+ARJEN: Yeah.  So you mentioned it a bit in the presentation as well, but the- inability to do things in a programmatic way, using an API, things like that, is a bit of a deal breaker for you, isn't it?
+
+DAWN: I think- nn, it's one of those things where, as I said, it really depends on your use case.  Because I think that there are use cases where this does work, but- very mature organisations that tend to lean on being able to do things programmatically a lot, I do not think this is currently a good solution.  There are - I, nn, I anticipate that a lot of the things that I highlighted around being locked into ClickOps and the fact that you can't customise guardrails yourself will be resolved in the next 6 to 12 months, but at the moment I think that it's- unless you're an immature organisation yourself, I think it's just too immature of a solution for me to be able to recommend it to very mature organisations that do a lot of things programmatically.  Because your workflow- you're not going to be able to use Control Tower and keep doing what you've been doing with your workflow, or - if you're still doing a lot of the things that you're doing with your workflow, a lot of the effort that you put into setting up Control Tower could probably be better spent elsewhere.  And that was my feeling with the- with the customisations is, I looked at it and- when I played around with it a little bit, I basically thought, look, your effort's probably better spent elsewhere.
+
+ARJEN: That'S fair enough, yep, I can totally understand that.  OK, erm, I'm not seeing any other questions crop up, so I guess you did an awesome job.
+
+DAWN: It's always good to be here.
+
+ARJEN: Yep. Thank you very much, Dawn.
+
+DAWN: No problem, I'm sure I'll be back in a couple of months with the next wild and wonderful thing that I run across.
 
 [Back to main talks repo](https://github.com/lisushka/talks)
