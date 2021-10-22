@@ -1,4 +1,4 @@
-# FinOps 101: How to Stop Your Cloud Workload from Breaking the Bank
+# FinOps 101: How to Stop Your Cloud Workload from Breaking the Bank - Transcript
 
 ROB: Thanks Arjen, thanks Guy.  Great look at the news as always.  Alright, so, tonight we have our, erm, our regular contributor Dawn.  Ah, we are very thankful for all the presentations Dawn has done so far this year, we're looking forward to another good one tonight.  Ah, Dawn, if you're able to share your screen?
 
