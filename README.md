@@ -35,6 +35,7 @@ These are hands-on workshops that you can complete in your own time.  The Reposi
 
 The talks in this section are generally 15 to 20 minutes long, with minimal background research involved.
 
+- **Control Tower - 12 Months On**: ([video](https://youtube.com/watch?v=2i92kWaU9Zk?t=1366)|[sources](https://github.com/lisushka/talks/blob/main/sources/control-tower-12.md)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/control-tower-12.md)) Melbourne AWS User Group, 2021-10-27
 - **Obscure Security on Kubernetes**: ([video](https://youtube.com/watch?v=T9PDcKDHjAI&t=2128)|[sources](https://github.com/lisushka/talks/blob/main/sources/obscure-security.md)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/obscure-security.md)) Melbourne AWS User Group, 2021-05-26
 - **You're Stronger Than You Think**: (not recorded) Women Who Code Brisbane, 2021-03-23
 - **Finding the right tools for your new job**: ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/right-tools.md)) AWS She Builds Day, 2021-03-11
