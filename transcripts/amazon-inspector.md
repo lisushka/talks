@@ -38,4 +38,68 @@ So, before I finish up, there are a couple of other things that I want to talk a
 
 Then, the other thing that I want to talk about is sort of- in terms of the use case that I had, where we were dealing with an issue where Amazon Inspector, we were basically using it to buy ourselves time - the thing with that is that, even if you're using them as an Inspector reactively, again, it's- analyzing those instances manually takes a lot of engineers' time and a lot of money, and what you're really worried about in terms of those analyses is not so much, okay, we need to, you know, immediately deal with this.  What you're trying to do is basically pick the low-hanging fruit, so resolve any issues that you can resolve quickly, which will then allow you time to make a coordinated plan to actually bring the instance down and patch it, which, in that case of the production issue, is what we ended up doing.
 
+So - to recap, Amazon Inspector is a tool that's basically used for checking security of EC2 instances.  That includes both network security and security of any programs that might be running on the actual machine, including the operating system.  It's something that can be used both proactively and reactively - in that, within AWS, you can schedule it, or you can run it once, if you have a security incident and you need to respond to it.  You can schedule it within AWS, you can schedule it weekly; you can also automate it into your build pipeline so that it runs every time you have a production deployment.  Now what that actually allows you to do is to look at the configuration and go, okay, are there any issues here where something has gone wrong, someone has potentially misconfigured a CloudFormation template, and then you're able to respond to that rather than having it become more of an issue down the line.
+
+S- And the maximum that you're ever going to pay for this is - 45 cents, 45 US cents per instance to run those scans.  If your workload is very small, it's going to be fairly cheap to run this.  If you are running the simpler scans, so just the network assessments, again, it's going to be cheaper than running the full host assessment to find out whether there's any vulnerable programs on that machine.  And - the first 250 scans are free, which does give you an opportunity to look at, you know, is this the right tool for our organisation, does this actually do what we want it to do, and- provided that your production workload is not exceptionally large, that will give you the chance to try it for maybe two, three weeks, see how you feel about it.
+
+So - we've reached the end of the presentation tonight.  I'm aware that this has probably not covered everything, but I'm hoping that this is a really good basic introduction to Amazon Inspector and why you might want to use it.  I imagine that I have been answering questions in the comments as we've gone, but if you do have any more questions, now is the time to ask them, so feel free to ask them either in the Slack channel or the YouTube comments, and I will respond accordingly.  Otherwise, it has been lovely to record this talk for all of you to listen to tonight, I hope to- get some good feedback on this, I hope that it has given you some information that you can then take back to your workplaces, and I hope that I will converse with you and potentially see some of you in the future once we're out of isolation.
+
+ROB: Cool, thank you very much Dawn for that.  Erm, that was record a little bit earlier, but she [sic] has joined us on- on Skype to answer some questions. Let's see if I can find the right button, here we go, here we go.  Dawn, can you hear me?  Oh, hang on?  Try now.
+
+DAWN: Ah, I can...
+
+ROB: A lot going on at once, all at once, there we go.
+
+DAWN: [laughter]
+
+ROB: Erm, so we've had a few questions come through in the YouTube channel.  Erm, I see you've been answering them as well, but we'll probably go through them a little bit here for the benefit of people who might be watching this later.
+
+DAWN: Yes.
+
+ROB: I get- helps if I get in my box on the screen.
+
+DAWN: [chuckle]
+
+ROB: So, first question, first question was from Simon Mackinnon: erm, so when you, when you do your Inspector runs, is that done via the the console or was it via the CLI?
+
+DAWN: So, for this talk I used a combination of both.  The first time that I actually introduced the- here's what the console looks like, I did that first run in the console.  Ah, when I- and at the stage that Simon had- had asked that question, we hadn't actually been through the pipeline section of the talk yet.  That's all done through the AWS CLI. So if you go and look at the Azure Pipelines file for that - and yes, I- I do know that's a bit sacrilegious -
+
+ROB: [laughter]
+
+DAWN: If you go and look at the Azure Pipelines file for that, it's using the AWS CLI task to run- those- to run those, erm, those scans.
+
+ROB: Awesome! And- that's all right, you can use Azure Pipelines around here, I used a lot of Github Actions myself, so.
+
+DAWN: [chuckles]
+
+ROB: Ah, so, our second question was from Guy Morton: do you mean that the assessment from 1 to 250 was $0 and then everything after is 15 cents each?
+
+DAWN: Nn.  So effectively, the, erm, the clarification for that is that the first 250 assessments basically are a free trial, in the same sense that the AWS free tier is, or GuardDuty is, and that's the first 250 assessments ever.  And then it rolls over to monthly pricing, which is basically a price per instance and- you get discounts- discounts for running it on a large volume of instances every month.  Discounts per instance, I- hesitate to add.
+
+ROB: Okay, so unlike the normal free [YouTube stream drops and is spliced]
+
+ROB: [stream cuts in] picking up everything in the chat anyway, erm, I mean, you'll be around for the rest of the night to answer anymore, if there are any more?
+
+DAWN: I most certainly will be.  Erm, and if you are interested in having a go with it, I will- the link to the Github - the Github for the Pipelines demo that I did was on the slides.  I will also, erm, put it in the YouTube chat, and I will put it in the Slack channel.  My intention is over the next 3-4 weeks to try and build that out into something - more fully fleshed; my feeling from having played with it is that, particularly the CLI for this is not very mature, so I'm going to go away and see whether I can - do a bit of scripting to fill some of the holes in the way that the CLI works at the moment.
+
+ROB: Right, okay.
+
+DAWN: So, if you're interested in it, do take a look at that.
+
+ROB: Cool, I definitely will.  It's something that I haven't really had the chance to look into myself, but is something that's, as you say, it's definitely worth being, erm, on the front foot with security issues.
+
+DAWN: Yes!
+
+ROB: And this is something that helps you do that.
+
+DAWN: Most definitely.
+
+ROB: Great. Thank you very much for tonight, Dawn.
+
+DAWN: Not a problem.
+
+ROB: We'll talk to you a bit later.
+
+DAWN: Yes!
+
 [Back to main talks repo](https://github.com/lisushka/talks)
