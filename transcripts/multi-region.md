@@ -24,4 +24,6 @@ ARJEN: yep cool okay thank you again Dawn
 
 DAWN: thank you
 
-ROB: thank you Dawn that was fantastic as always I'm looking forward to the the novelisation of ProductCorp's stories sometime in the future or at the very least continuing to hear about their exploits next year 
+ROB: thank you Dawn that was fantastic as always I'm looking forward to the the novelisation of ProductCorp's stories sometime in the future or at the very least continuing to hear about their exploits next year
+
+[Back to main talks repo](https://github.com/lisushka/talks)
