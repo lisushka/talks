@@ -32,4 +32,32 @@ And that starts with the obvious question of - how close to identical are your r
 
 And from there, do you want to deploy every region at once?  There could be really good reasons why you do want to do this, in the sense that it has you- it has you doing everything in one go, but there could also be really good reasons why you don't.  If you want to test something at a particular scale, you may only want to deploy it to your smallest region with the fewest customers, so that then you've got one or two clients that get really annoyed with you if it falls over, as compared to one or two hundred, or one or two thousand.  You may also have a situation where you only want to deploy particular changes to particular regions, as with the regulatory and compliance frameworks.  And then there's a question around how you actually move data.  Because in some cases you'll have a set up where- each of your regional workloads is entirely isolated, but that's not always going to be the case.  And so there's a question around, do you need communication across regions?  And if so, how are you going to achieve that?  With some services it's really intuitive, with others that can be very complex.
 
+ARJEN: Cool!  Thanks Dawn.  That was a very interesting, erm, chapter in ProductCorp's life again.
+
+DAWN: [laughs]
+
+ARJEN: So, while we're waiting, erm, for everybody else to come up with questions, erm, you gave a good overview of a lot of the downsides of- that come with erm, r- running multi-region, and I know this question is going to be very very broad, but erm: considering all the issues with multi-region, erm, do you think it's going to be worth going multi-region next year when we get our Melbourne region?
+
+DAWN: It's going to depend on what you're doing; I am not sure that I would necessarily advise everyone to immediately go out and replicate their workloads into the Melbourne region, but it is always useful to be able to do things like data backups in another region.  It's sometimes useful to have particular services that are really critical to your system running multi-region if you need to.  And there are also some benefits around - effectively being able to pick and choose what you want where.  There may be some scenarios where you want particular setups in- the Melbourne region rather than Sydney where latency is really important.  So, if you're running, you know, financial transaction systems, it can be really important to have that latency of seven or eight milliseconds compared to 40.  So there will be scenarios where there's a massive upside to running things multi-region, but it's not always going to be the case; as per my usual recommendation, you've got to actually understand what you're trying to do.
+
+ARJEN: The, ah, standard AWS answer, I think, is, erm, it depends.
+
+DAWN: [loud laughter] I would argue that's probably the standard answer with anything in tech!  But yes.
+
+ARJEN: Yeah.  Cool!  Erm, I'm still not seeing any other questions coming in, so - erm, I do see positive comments, so all I can assume then is that your talk was awesome as always-
+
+DAWN: [laughs]
+
+ARJEN: -and everybody knows exactly everything they need to know about multi-region.
+
+DAWN: Cool.  Well, I'll jump into the YouTube chat anyway, so if people do think of questions, erm, while the second talk is going, I'll be more than happy to answer them there.  Or Slack, or the usual channels.
+
+ARJEN: Yep, cool.  Okay, thank you again Dawn.
+
+DAWN: Thank you.
+
+ARJEN: [inaudible]
+
+ROB: Thank you Dawn.  That was fantastic as always.  I'm looking forward to the the novelisation of ProductCorp's stories sometime in the future, or at the very least continuing to hear about their exploits next year.
+
 [Back to main talks repo](https://github.com/lisushka/talks)
