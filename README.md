@@ -6,6 +6,7 @@ Hello! This repository is a source of truth for all of the presentations and wor
 - [Panels](#panels)
 - [Workshops](#workshops)
 - [Short Talks](#lightning-talks)
+- [How do you do your captioning and transcripts?](#how-do-you-do-your-captioning-and-transcripts)
 
 ## Conference Talks
 
@@ -45,3 +46,7 @@ The talks in this section are generally 15 to 20 minutes long, with minimal back
 - **FinOps 101: How to Stop Your Cloud Workload from Breaking the Bank**: ([video](https://youtube.com/watch?v=AgE-sZFN308&t=1885)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/finops.md)) Melbourne AWS User Group, 2020-08-26
 - **Build from the Ground Up with AWS Control Tower**: ([video](https://youtube.com/watch?v=h8XEyF_k8dE&t=2021)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/control-tower.md)) Melbourne AWS User Group, 2020-06-24
 - **Automating security checks with Amazon Inspector**: ([video](https://youtube.com/watch?v=iBlnPqmccNQ?t=1684)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/amazon-inspector.md)) Melbourne AWS User Group, 2020-04-29
+
+## How do you do your captioning and transcripts?
+
+[There's a separate repo for that!](https://github.com/lisushka/captioning-process)  I'm currently working through this workflow to make as much of it accessible, using free and open-source software, as I possibly can.
