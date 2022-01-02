@@ -49,4 +49,4 @@ The talks in this section are generally 15 to 20 minutes long, with minimal back
 
 ## How do you do your captioning and transcripts?
 
-[There's a separate repo for that!](https://github.com/lisushka/captioning-process)  I'm currently working through this workflow to make as much of it accessible, using free and open-source software, as I possibly can.
+[There's a separate repo for that!](https://github.com/lisushka/caption-runbook)  I'm currently working through this workflow to make as much of it accessible, using free and open-source software, as I possibly can.
