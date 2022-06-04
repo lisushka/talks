@@ -63,4 +63,56 @@ Which is not a great place to start.  And so that brings us to the subject of a 
 
 RTO is 'how long can we afford to be down?  If everything goes down and it takes us 24 hours for u- us to bring our systems back up, can we survive?  Can we survive if they're down for 48 hours?'  RPO boils down to 'how much data can we afford to lose?  Is it five minutes of data, 15 minutes of data, an hour of data?  How much data can we as a business afford to lose - afford to have not backed up - once the system is back up?'  And the third question is 'can we do better than we can afford to without too much extra effort?'  It does not make a lot of sense, in most situations, to go from five minutes to one minute.  But if you can cut your RPO, say, from 24 hours worth of data lost to an hour worth of data lost without doing much more, that's quite good.  That's the kind of thing that you should be aiming to do.  So basically, 'what kind of losses can the business eat if everything goes completely wrong, and can we do it better than that?'
 
-Then you've got to work out what your failure scenarios actually are.  `us-east-1` going down, in the cloud, is a very obvious one, but what you're looking at here is going to be specific to your company infrastructure.  And it should cover many different domains.  So you've got your pl- full platform outages, but note: that's not just cloud providers.  If you're using hosted Git, that's going to be relevant.  What happens if you lose your hosted Git provider?  If you have things like a password manager, if you're using an issue tracker, like a Jira, what are you going to do if one of those platforms goes down?
+Then you've got to work out what your failure scenarios actually are.  `us-east-1` going down, in the cloud, is a very obvious one, but what you're looking at here is going to be specific to your company infrastructure.  And it should cover many different domains.  So you've got your pl- full platform outages, but note: that's not just cloud providers.  If you're using hosted Git, that's going to be relevant.  What happens if you lose your hosted Git provider?  If you have things like a password manager; if you're using an issue tracker, like a Jira; what are you going to do if one of those platforms goes down?
+
+You've got the region outages, but another one to consider, particularly if you're in AWS, is things like availability zone outages.  Then you've got, you know, your component outages; you might have an underlying failure on the hardware of an RDS instance, that has been known to happen.  They're just EC2 instances at the bottom of it.  Or you might end up misconfiguring something, which means that it fails to come up in the first place, or it fails to work properly.  Another scenario that you want to understand is data loss or data corruption, and that can happen in a lot of different ways.  It can happen in the catastrophic scenario of an attacker going in and just deleting all of your backups, but there are situations, as well, where you can actually push code changes which will cause your data to become corrupt, and then you need to roll back.  So once you have worked out what your business can afford to lose, then you've got to work out what your failure scenarios are.
+
+And then it comes to 'how do we actually mitigate them?'  And the most important thing to understand here is some fixes can be automated.  There are a lot of things that you can do here - and this varies from the very, very basic to the extremely complex.  So looking at some of the basic things.  [audience member coughs]  As we saw with Fly Money's infrastructure, if your instances are failing health checks, you can actually get your auto-scalers to tear them down and bring up new ones.  And that can be done as well, in AWS, at the application level.  You just need to configure it that way.  Another one which is maybe not as simple, but is really important, is if you've got DNS misconfigurations or networking misconfigurations.  That's what took down `us east-1` in one of those two outages last year.  So if you know what your DNS and your networking should look like, it's a good idea to build in some sanity checks, and potentially roll back any changes that look problematic.
+
+In theory, you can do this with quite a lot of things.  AWS has EVentBridge; anything that fires events, you can look for those events and build on it.  But my advice to you here would be, if you're planning to go all in on self-healing architecture, start small.  It's very, very difficult to build an entire self-healing architecture from scratch, but if you can start with self-healing things like your virtual machines, your auto-scaling groups, your DNS, and then build on top of that, eventually that is what will get you to a fully self-healing architecture.
+
+And as we all know, if you haven't tested a plan, you can't be sure that it works.  If you haven't tested a plan, that's how you end up with backups that haven't actually run for the past 12 months.  So before you say 'we have a disaster recovery plan *that works*', please make sure that you test it.  Another reason why this is really important, though, is that services and processes don't stay static.  ProductCorp, in two and a bit years, have evolved from an architecture that was entirely server based - based on your EC2, your RDS - to Lambda, Step Functions and DynamoDB.  Any disaster recovery plan that ProductCorp wrote two and a half years ago, at this point, was- is not worth the keyboard that it was typed on.  But another way that services and processes don't stay static is cloud providers will change things.  AWS is notoriously resistant to deprecating stuff, but even they've managed to deprecate the odd thing once in a while.  And another important thing that will change - which is the thing that AWS is not resistant to changing - is the UI.  So if there are things that you need to do manually, you want to test that process to make sure that people actually understand what the state of it is at any given point.
+
+Another reason why this is really important is if your teams have tested it to make sure that it works, they're then going to be much more confident when someone calls them up, or whatever your pager system is wakes them up, at three in the morning and says 'Hey!  All of our production systems are down.'  When you're - and I can say this from experience - when you're running on very little sleep, if you've had a reasonable amount of experience poking around the system and you understand what's going on, you're going to do much better recovering the system in that scenario than you are if you've never touched the disaster recovery plan before, you've never tested it, or you don't even know what's in it.  So regular disaster recovery testing is really important for ensuring that teams are actually confident when they get that page.  And, speaking of pages, your alerting systems, your monitoring systems, and your pager systems are part of disaster recovery.  They should be part of your business continuity plan and you should be testing them.  For every one of those failure scenarios, it's well worthwhile to know where you're likely to get the warning from.  Is it going to be your call centre at three in the morning, or is it just going to come through an automated alert?
+
+And again, in terms of the DevOps side of things, the best disaster recovery process is an automated one.  One of the best things that you can do, in terms of checking to ensure that things work, is integrating the testing of your disaster recovery into your day-to-day workflow.  So a few ways that you might do this: if you're building your infrastructure from- you know, you're building your dev infrastructure through infrastructure as code, you might actually want to tear that down over the weekends to save cost.  And so, if you can automate the rebuilding of your dev environments using infrastructure as code and CI/CD, w- and automate the tearing down, automate the rebuilding at the beginning of each day, or the beginning of each week, that's a double win!  Because it's going to save you money, and it's going to mean that you know that if your system goes completely kaputt, you do have the processes there to build it all up from scratch.  Another thing that you can do is - to ensure that your database backups work, if you need to work- if you need to have essentially, a pre-production environment which has data which is very close to the data in your production environment - in some scenarios you can take your production database, strip out any identifying information, and you can use that anonymised backup to construct test databases.  This is not going to work if you're in really highly regulated environments, but if you're not, it's a worthwhile method of considering because the database backups are generally the things that are most likely to fail.
+
+So that is the end of the presentation.  I am more than happy to take questions.  Contacts otherwise are up there, and if you're interested in following the previous history of ProductCorp, there is a link there to all of the talks that I've done previously, including the ones that I've done at the AWS User Group.
+
+AUDIENCE: [claps]
+
+DAWN: Thank you very much!
+
+ROB: [from a distance] Does anybody have any questions?  [pause]  Either online or in the room?
+
+DAWN: [chuckles]
+
+ROB: No questions!  Thank you very much, Dawn!
+
+DAWN: Thank you for having me again!  [pause, Rob walks up to stage] Now I assume we just disconnect that.
+
+ROB: Yep.
+
+DAWN: And you'll be wanting that back.
+
+ROB: Thank you.
+
+DAWN: [sound of laptop hitting lectern]  And I really need to grow a third hand.
+
+ROB: Is it possible- you can leave that there, I won't-
+
+DAWN: Okay.
+
+ROB: I won't need the space, I just need to grab the-
+
+DAWN: Yeah.
+
+ROB: -[inaudible] back on this one.
+
+DAWN: You need that?
+
+ROB: Yep.
+
+DAWN: I'll give you that one back later, if that's alright.
+
+ROB: Yeah, that's fine.  You might want to switch it off, though, unless- there we go, that should be off.
