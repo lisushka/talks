@@ -40,7 +40,7 @@ The talks in this section are generally 15 to 20 minutes long, with minimal back
 
 - [**Disaster recovery in the cloud**](https://youtube.com/watch?v=p63iv6Z9N6Y?t=5924): ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/disaster-recovery.md)) Melbourne AWS User Group, 2022-04-27
 - [**The AWS Multi-Region Starter Guide**](https://youtube.com/watch?v=3JUvHf0zkFw?t=1762): ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/multi-region.md)) Melbourne AWS User Group, 2021-11-24
-- [**Control Tower - 12 Months On](https://youtube.com/watch?v=2i92kWaU9Zk?t=1366)**: ([sources](https://github.com/lisushka/talks/blob/main/sources/control-tower-12.md)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/control-tower-12.md)) Melbourne AWS User Group, 2021-10-27
+- [**Control Tower - 12 Months On**](https://youtube.com/watch?v=2i92kWaU9Zk?t=1366): ([sources](https://github.com/lisushka/talks/blob/main/sources/control-tower-12.md)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/control-tower-12.md)) Melbourne AWS User Group, 2021-10-27
 - [**Obscure Security on Kubernetes**](https://youtube.com/watch?v=T9PDcKDHjAI&t=2128): ([sources](https://github.com/lisushka/talks/blob/main/sources/obscure-security.md)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/obscure-security.md)) Melbourne AWS User Group, 2021-05-26
 - **You're Stronger Than You Think** (not recorded): Women Who Code Brisbane, 2021-03-23
 - **Finding the right tools for your new job** (not recorded): ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/right-tools.md)) AWS She Builds Day, 2021-03-11
