@@ -38,7 +38,7 @@ These are hands-on workshops that you can complete in your own time.  The Reposi
 
 The talks in this section are generally 15 to 20 minutes long, with minimal background research involved.
 
-- **Disaster recovery in the cloud**: ([video](https://youtube.com/watch?v=p63iv6Z9N6Y?t=5924)|[transcript]()) Melbourne AWS User Group, 2022-04-27
+- **Disaster recovery in the cloud**: ([video](https://youtube.com/watch?v=p63iv6Z9N6Y?t=5924)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/disaster-recovery.md)) Melbourne AWS User Group, 2022-04-27
 - **The AWS Multi-Region Starter Guide**: ([video](https://youtube.com/watch?v=3JUvHf0zkFw?t=1762)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/multi-region.md)) Melbourne AWS User Group, 2021-11-24
 - **Control Tower - 12 Months On**: ([video](https://youtube.com/watch?v=2i92kWaU9Zk?t=1366)|[sources](https://github.com/lisushka/talks/blob/main/sources/control-tower-12.md)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/control-tower-12.md)) Melbourne AWS User Group, 2021-10-27
 - **Obscure Security on Kubernetes**: ([video](https://youtube.com/watch?v=T9PDcKDHjAI&t=2128)|[sources](https://github.com/lisushka/talks/blob/main/sources/obscure-security.md)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/obscure-security.md)) Melbourne AWS User Group, 2021-05-26
