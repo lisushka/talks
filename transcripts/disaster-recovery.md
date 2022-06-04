@@ -10,7 +10,7 @@ DAWN: Except that we still don't have the slides up.
 
 ROB: No, but they're in- there!
 
-DAWN: Excellent! I do believe we have got the audiovisual working...[checks mic] Can you all hear me?
+DAWN: Excellent! I do believe we have got the audiovisual working... [checks mic] Can you all hear me?
 
 AUDIENCE: [inaudible]
 
