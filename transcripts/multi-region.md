@@ -84,7 +84,9 @@ ARJEN: Yep, cool.  Okay, thank you again Dawn.
 
 DAWN: Thank you.
 
-ARJEN: [inaudible]
+ARJEN: Let's move on.
+
+[crackling noise]
 
 ROB: Thank you Dawn.  That was fantastic as always.  I'm looking forward to the the novelisation of ProductCorp's stories sometime in the future, or at the very least continuing to hear about their exploits next year.
 
