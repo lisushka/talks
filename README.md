@@ -39,7 +39,7 @@ These are hands-on workshops that you can complete in your own time.  The link w
 
 The talks in this section are generally 15 to 20 minutes long, with minimal background research involved.
 
-- **Using Infrastructure as Code tools to define ownership and responsibility** (transcript): Melbourne AWS User Group, 2022-06-29; Infrastructure Coders, 2022-07-12
+- [**Using Infrastructure as Code tools to define ownership and responsibility**](https://youtube.com/watch?v=EalSppnCvbE?t=2934) (transcript): Melbourne AWS User Group, 2022-06-29; Infrastructure Coders, 2022-07-12
 - [**Disaster recovery in the cloud**](https://youtube.com/watch?v=p63iv6Z9N6Y?t=5924) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/disaster-recovery.md)):  Melbourne AWS User Group, 2022-04-27
 - [**The AWS Multi-Region Starter Guide**](https://youtube.com/watch?v=3JUvHf0zkFw?t=1762) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/multi-region.md)): Melbourne AWS User Group, 2021-11-24
 - [**Control Tower - 12 Months On**](https://youtube.com/watch?v=2i92kWaU9Zk?t=1366) ([sources](https://github.com/lisushka/talks/blob/main/sources/control-tower-12.md)|[transcript](https://github.com/lisushka/talks/blob/main/transcripts/control-tower-12.md)): Melbourne AWS User Group, 2021-10-27
