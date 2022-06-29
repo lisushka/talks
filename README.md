@@ -6,7 +6,7 @@ Hello! This repository is a source of truth for all of the presentations and wor
 - [Panels](#panels)
 - [Workshops](#workshops)
 - [Short Talks](#lightning-talks)
-- [Interviews and Podcasts](#interviews-podcasts)
+- [Interviews and Podcasts](#interviews-and-podcasts)
 - [How do you do your captioning and transcripts?](#how-do-you-do-your-captioning-and-transcripts)
 
 ## Conference Talks
@@ -50,7 +50,7 @@ The talks in this section are generally 15 to 20 minutes long, with minimal back
 - [**Build from the Ground Up with AWS Control Tower**](https://youtube.com/watch?v=h8XEyF_k8dE&t=2021) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/control-tower.md)): Melbourne AWS User Group, 2020-06-24
 - [**Automating security checks with Amazon Inspector**](https://youtube.com/watch?v=iBlnPqmccNQ?t=1684) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/amazon-inspector.md)): Melbourne AWS User Group, 2020-04-29
 
-## Interviews/Podcasts
+## Interviews and Podcasts
 
 - [**What's New in AWS - May 2022**](https://youtube.com/watch?v=iBlnPqmccNQ?t=1684), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) (transcript): Melbourne AWS User Group, 2022-05-25
 
