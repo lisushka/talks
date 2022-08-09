@@ -13,6 +13,7 @@ Hello! This repository is a source of truth for all of the presentations and wor
 
 The talks in this section rely on extensive background research, and sometimes personal experience.  The Sources links go to separate repositories, with links to recordings of the talk and references that I used while putting it together.
 
+- **Deploying an open-source project to Digital Ocean using Terraform and Terraform Cloud**: [sources](https://github.com/lisushka/osc-terraform)
 - **The open-source chatbot that accidentally built a community**: [sources](https://github.com/lisushka/winnie-osc)
 - **Upstream Accessibility: A Contributor's Guide**: [sources](https://github.com/lisushka/upstream)
 - **Free Security for Open-Source Projects**: [sources](https://github.com/lisushka/free-security)
