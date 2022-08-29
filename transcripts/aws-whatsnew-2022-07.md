@@ -40,61 +40,15 @@ ARJEN: Yep.  Definitely good.  Not much on the container side, erm, you can run 
 
 DAWN: Yeah, I'll- I'll endorse don't.   Erm, if you are doing Kubernetes - if you do have one of the valid use cases for Kubernetes - and you're thinking you might like to try this, think very carefully before you do it would be my advice.
 
-ARJEN: Yep.  So, moving on to more interesting stuff.  A lot in here, erm, on Dev and Ops.  My favorite is going to be
-32:09
-the CloudFormation event notifications with EventBridge so what has happened here is that you can now
-32:16
-CloudFormation on certain actions like stack changes will you can hook it up to EventBridge so
-32:23
-that EventBridge sends notifications and you can hook that up as you know if your fan bridge basically connects to every
-32:30
-aws service there is so you can do a lot of fun stuff with this
-32:35
-um from basic stuff like you have a stack that goes into delete
-32:42
-field you get a notification on your slack channels there's
-32:48
-so much to play around with here i've got many ideas i'm not going to
-32:54
-talk about them all but it's good
-33:02
-[Music] ah i my second favorite on here because i
-33:08
-think iron and i share a favor is being able to programmatically manage the contact information for your aws
-33:14
-accounts you can do that both for an individual aws account and from organizations
-33:20
-i love this because it's such a simple change which is likely to um a lot of
-33:25
-people don't even know that you can manage the contact information from within orgs
-33:31
-it's a simple change which means that if you ever get notifications from aws going something has really completely
-33:37
-blown up you can now make sure that the contacts for that are actually going to the right
-33:42
-place if you have a big org with lots of contact information and you've never looked at this now you can do it
-33:48
-programmatically it's well worth having a look at because it's a very small change that can potentially save you if
-33:54
-aws gets grumpy with you about anything yep um the other one i'd like to point out
-34:01
-here is just the cloud watch looks integration for visual studio code
-34:07
-it's nice if when you're able to just look at your logs in your editor instead of having to
-34:13
-go through and go through the cloud watch
-34:19
-in the cloud which logs interface although i'd always say just use [Music] cloudwatch logs
-34:25
-insights i think where you can properly search it which is way better
-34:31
-but i on time let's move to security
-34:37
-oh there's there's some interesting stuff here the network fireball supporting vpc prefix lists was
-34:44
-something that when i was looking at the announcements i sort of glazed over and then on the second look back i went and
-34:50
-had another look at it and thought actually this is really really powerful because it allows you to
+ARJEN: Yep.  So, moving on to more interesting stuff.  A lot in here, erm, on Dev and Ops.  My favourite is going to be the CloudFormation event notifications with EventBridge.  So what has happened here is that you can now - CloudFormation, on certain actions, like stack changes, will- you can hook it up to EventBridge, so that EventBridge sends notifications.  And you can hook that up - as you know, EventBridge basically connects to every AWS service there is, so you can do a lot of fun stuff with this.  Erm, from basic stuff, like, you have a stack that goes into `DELETE_FAILED`, you get a notification on your Slack channels.  There's so much to play around with here.  Erm, I've got many ideas, I'm not going to talk about them all, but - it's good.
+
+ROB: [pushes button on Dawn's microphone]
+
+DAWN: Ah!  Erm, I- my second favourite on here, because I think Arjen and I share a favourite, is, ah, being able to programmatically manage the contact information for your AWS accounts; you can do that both for an individual AWS account and from Organisations.  I love this because it's such a simple change, which is likely to- erm, a lot of people don't even know that you can manage the contact information from within orgs.  It's a simple change which means that if you ever get notifications from AWS going 'something has really completely blown up', you can now make sure that the contacts for that are actually going to the right place.  If you have a big org with lots of contact information and you've never looked at this, now you can do it programmatically.  It's well worth having a look at, because it's a very small change that can potentially save you if AWS gets grumpy with you about anything.
+
+ARJEN: Yep.  Erm, the other one I'd like to point out here is just the CloudWatch Logs integration for Visual Studio Code.  Erm, it's nice i- when you're able to just look at your logs in your editor instead of having to go through and- go through the CloudWatch, erm, in- the CloudWatch Logs interface.  Although I'd always say just use, erm, CloudWatch Logs Insights, I think, where you can properly search it.  Which is way better.  But [pause] we are on time, let's move to Security.
+
+DAWN: Oh, there's- there's some interesting stuff here.  The Network Firewall supporting VPC prefix lists was something that when I was looking at the announcements, I sort of glazed over.  And then on the second look back, I went and had another look at it, and thought 'Actually, this is really really powerful'.  Because it allows you to
 34:57
 scope everything down again with a lot of these security and security-ish
 35:03
@@ -104,15 +58,15 @@ which is always a very good thing probably not all that many people are using ne
 35:16
 but if you've got edge cases this is going to be quite good yep
 35:22
-my so something i enjoy here first um
+my so something I enjoy here first um
 35:27
-ss aws sso as per this morning has been renamed to iam identity center
+ss aws sso as per this morning has been renamed to IAM identity center
 35:34
-i propose that everybody forgets that part iam is in there because it doesn't make any sense to be
+i propose that everybody forgets that part IAM is in there because it doesn't make any sense to be
 35:41
-called i the identity access manager identity center so just call it entity center
+called i the Identity access manager identity center so just call it entity center
 35:48
-basically treat it like session manager atm machine
+basically treat it like session manager ATM Machine
 35:54
 um but bigger news there is it now finally supports customer managed
 36:01
@@ -122,7 +76,7 @@ it supports customer managed policies uh it also supports permissions boundaries
 36:16
 i was looking for basically previously all you could do is attach
 36:22
-specific aws provided policies or have one big inline policy
+specific AWS provided policies or have one big inline policy
 36:27
 and by specific they were very very limited being able to attach customer managed policies it's now much less
 36:33
