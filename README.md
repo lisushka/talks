@@ -1,4 +1,4 @@
-# Talks, Workshops, and Other Presentations
+# Talks, Workshops, and Other Content
 
 Hello! This repository is a source of truth for all of the presentations and workshops that I've given at public events.
 
@@ -55,6 +55,10 @@ The talks in this section are generally 15 to 20 minutes long, with minimal back
 
 - [**What's New in AWS - July 2022**](https://youtube.com/sjKzPVz3sII?t=1610), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) (transcript): Melbourne AWS User Group, 2022-07-27
 - [**What's New in AWS - May 2022**](https://youtube.com/watch?v=iBlnPqmccNQ?t=1684), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) (transcript): Melbourne AWS User Group, 2022-05-25
+
+## Blog Posts
+
+- [**An introduction to FinOps and cost control on AWS**](https://innablr.com.au/blog/what-is-finops-and-how-to-get-started-with-cost-control-on-aws/), Innablr Blog, 2022-08-02
 
 ## How do you do your captioning and transcripts?
 
