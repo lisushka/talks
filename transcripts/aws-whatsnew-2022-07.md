@@ -48,100 +48,43 @@ DAWN: Ah!  Erm, I- my second favourite on here, because I think Arjen and I shar
 
 ARJEN: Yep.  Erm, the other one I'd like to point out here is just the CloudWatch Logs integration for Visual Studio Code.  Erm, it's nice i- when you're able to just look at your logs in your editor instead of having to go through and- go through the CloudWatch, erm, in- the CloudWatch Logs interface.  Although I'd always say just use, erm, CloudWatch Logs Insights, I think, where you can properly search it.  Which is way better.  But [pause] we are on time, let's move to Security.
 
-DAWN: Oh, there's- there's some interesting stuff here.  The Network Firewall supporting VPC prefix lists was something that when I was looking at the announcements, I sort of glazed over.  And then on the second look back, I went and had another look at it, and thought 'Actually, this is really really powerful'.  Because it allows you to
-34:57
-scope everything down again with a lot of these security and security-ish
-35:03
-things that we've got on the slides here it allows you to scope everything down much more carefully
-35:08
-which is always a very good thing probably not all that many people are using network firewalls and would need this
-35:16
-but if you've got edge cases this is going to be quite good yep
-35:22
-my so something I enjoy here first um
-35:27
-ss aws sso as per this morning has been renamed to IAM identity center
-35:34
-i propose that everybody forgets that part IAM is in there because it doesn't make any sense to be
-35:41
-called i the Identity access manager identity center so just call it entity center
-35:48
-basically treat it like session manager ATM Machine
-35:54
-um but bigger news there is it now finally supports customer managed
-36:01
-policies as well as
-36:10
-it supports customer managed policies uh it also supports permissions boundaries it's the other news that's the name yeah
-36:16
-i was looking for basically previously all you could do is attach
-36:22
-specific AWS provided policies or have one big inline policy
-36:27
-and by specific they were very very limited being able to attach customer managed policies it's now much less
-36:33
-limited it gives you a lot more flexibility and it means that people are much more likely to actually be able to
-36:40
-go in and edit what they're doing rather than attaching the same inline policy to 10 or 20 different groups so the name
-36:48
-change we can take or leave but the customer managed policies and the permissions boundaries this is quite
-36:53
-good you can now manage all of that much more readily and shoot yourself in the foot less often yep
-37:00
-one major thing about this though
-37:05
-the way it works is that you have to provision those policies and permission boundaries to each account that you're
-37:12
-going to use it in yourself so it's not that you
-37:18
-define them once you have to deploy them to all your accounts
-37:24
-so um automate that yeah potentially a use case for stack sets
-37:29
-the firewall manager supporting the um additional configurations is something
-37:35
-that again probably not a lot of people are going to use but i'm vaguely aware of at least one case where particularly
-37:42
-with the strict rule order what used to happen was a my understanding is what used to happen
-37:47
-was aws would just evaluate this based on an aws predetermined order that
-37:54
-used to be a use case for a lot of third-party firewall applications it may well be that with this that's now no
-38:00
-longer the case and you can do some of those things that you used to have to offload to third-party firewalls through
-38:06
-firewall manager so that would be super interesting to see where that lands cool
-38:12
-and the last one i would want to discuss here is for those of us who don't have
-38:18
-absolutely everything in aws i am roles anywhere basically is a new
-38:24
-way to be able to assume roles within aws so
-38:30
-if you're on-prem or at first party services that needed the connection within aws
-38:36
-or work on other clouds that make a connection with aws
-38:43
-you always had to provide api keys that was not exactly seen as you know best practice security
-38:51
-wise because nobody ever ever rotates those keys
-38:57
-now you can set it up in such a way um there's a whole thing around it and
-39:03
-you have to use a private certificate manager but you can provision
-39:09
-temporary roles that can be assumed from your on-prem or otherwise provided
-39:14
-systems which is way more secure if you need this kind of access so
-39:20
-if you used if you have a situation like that definitely look into this it's a good blog post on how everything
-39:27
-works how you set it up it's a lot of it's a bit of work to set it up but after that it's definitely
-39:33
-worth it from a security standpoint yeah that's it's good if you're not in the walled
-39:40
-garden
-39:45
+DAWN: Oh, there's- there's some interesting stuff here.  The Network Firewall supporting VPC prefix lists was something that when I was looking at the announcements, I sort of glazed over.  And then on the second look back, I went and had another look at it, and thought 'Actually, this is really, really powerful, because it allows you to scope everything down'.  Again, with a lot of these security and security-ish things that we've got on the slides here, it allows you to scope everything down much more carefully, which is always a very good thing.  Probably not all that many people are using network firewalls and would need this, but if you've got edge cases, this is going to be quite good.
+
+ARJEN: Yep.  My, er, so, something I enjoy here.  First, erm, SS- AWS SSO, as per this morning, has been renamed to IAM Identity Centre.
+
+DAWN: [laughs]
+
+ARJEN: I propose that everybody forgets that the part IAM is in there, because it doesn't make any sense to be called the IA- the Identity Access Manager Identity Centre.
+
+DAWN: [laughs harder]
+
+ARJEN: So, just call it Identity Centre.  Basically, treat it like Session Manager.
+
+DAWN: ATM machine! [laughs]
+
+ARJEN: Erm, but bigger news there is it now finally supports customer-managed policies as well as, erm - [off-mic] I forgot the term.
+
+DAWN: [laughs] It supports customer-managed policies, ah, it also supports permissions boundaries, is the other new thing.
+
+ARJEN: That's the one.
+
+DAWN: Yeah.
+
+ARJEN: That's the name I was looking for.  Basically, previously all you could do is attach specific AWS-provided policies, or have one big inline policy.
+
+DAWN: Mmm.  And by specific, they were very, very limited.  Being able to attach customer managed policies, it's now much less limited.  It gives you a lot more flexibility, and it means that people are much more likely to actually be able to go in and edit what they're doing, rather than attaching the same inline policy to 10 or 20 different groups.  So - the name change we can take or leave, but the customer-managed policies and the permissions boundaries, this is quite good.  You can now manage all of that much more readily, and shoot yourself in the foot less often.
+
+ARJEN: Yep. One, erm, major thing about this though, the way it works is that you have to provision those policies and permission boundaries to each account that you're going to use it in yourself.  So, it's not that you pr-, erm, define them once; you have to deploy them to all your accounts.  So, erm, automate that.
+
+DAWN: Yeah.  Potentially a use-case for StackSets.
+
+ARJEN: Yep.
+
+DAWN: The Firewall Manager supporting the, erm, additional configurations is something that, again, probably not a lot of people are going to use, but I'm vaguely aware of at least one case where, particularly with the strict rule order, what used to happen was A- my understanding is, what used to happen was, AWS would just evaluate this based on an AWS-predetermined order.  That used to be a use case for a lot of third-party firewall applications.  It may well be that with this that's now no longer the case, and you can do some of those things that you used to have to offload to third-party firewalls through Firewall Manager.  So that will be super interesting to see where that lands.
+
+ARJEN: Cool.  And the last one I would want to discuss here is, for those of us who don't have absolutely everything in AWS, IAM Roles Anywhere basically is a new way to be able to assume roles within AWS.  So if you're on-prem, or at first-party services that needed the connection within AWS, or work on other clouds that make a connection with AWS, you always had to provide API keys.  That was not exactly seen as, you know, best practice security-wise, because nobody ever, ever rotates those keys.  Now you can, erm, set it up in such a way, erm, there's a whole thing around it, and you have to use a private certificate manager, but you can provision temporary roles that can be assumed from your on-prem or otherwise provided systems.  Which is way more secure if you need this kind of access, so if you do use, if you have a situation like that, definitely look into this.  There's a good blog post on how everything works, how you set it up.  It's a lot of- it's a bit of work to set it up, but after that it's definitely worth it from a security standpoint.
+
+DAWN: Yeah, that's- it's good if you're not in the walled garden.
 
 ARJEN: Other cool stuff; erm, now that Apple has released M2 Macs, it's good that AWS now supports the M1s!
 
