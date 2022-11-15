@@ -57,7 +57,7 @@ The talks in this section are generally 15 to 20 minutes long, with minimal back
 
 - [**What's New in AWS - September 2022**](https://youtube.com/watch?v=dYQkMA0_IS0&t=487), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2022-09.md)): Melbourne AWS User Group, 2022-09-28
 - [**What's New in AWS - July 2022**](https://youtube.com/watch?v=sjKzPVz3sII&t=1610), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2022-07.md)): Melbourne AWS User Group, 2022-07-27
-- [**What's New in AWS - May 2022**](https://youtube.com/watch?v=iBlnPqmccNQ&t=1684), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2022-05.md)): Melbourne AWS User Group, 2022-05-25
+- [**What's New in AWS - May 2022**](https://www.youtube.com/watch?v=Nyls39XA0KI&t=1356s), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2022-05.md)): Melbourne AWS User Group, 2022-05-25
 
 ## Blog Posts
 
