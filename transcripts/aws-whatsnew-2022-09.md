@@ -104,7 +104,7 @@ DAWN: -he would have a great deal to say about that were he up here.  And again,
 
 ARJEN: Yep.  Connect also has a couple more search APIs which I'm sure, erm, are useful.  And of course, the thing everybody has been waiting for is the console home widgets for blog posts and launch announcements, so that you can see the latest five announcements whenever you open your console.
 
-DAWN: See, I want to say something snarky about that, but there are so many scenarios where I've come up here and done What's New In AWS, and only known about things that have changed because of that, I actually think this is a good thing.  Because it means that people- at least for the launch announcements, people are going to realize when things have changed, and they're going to stop doing things the old way.  Hopefully.  We can hope, right?
+DAWN: See, I want to say something snarky about that, but there are so many scenarios where I've come up here and done What's New In AWS, and only known about things that have changed because of that, I actually think this is a good thing.  Because it means that people- at least for the launch announcements, people are going to realise when things have changed, and they're going to stop doing things the old way.  Hopefully.  We can hope, right?
 
 ARJEN: Hopefully, except, erm, if there's a limit of five being shown, I haven't seen many days for AWS only released five things.  So the one that you're after might not actually show up.
 
