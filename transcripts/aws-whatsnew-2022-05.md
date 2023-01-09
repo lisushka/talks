@@ -14,55 +14,63 @@ ARJEN [mumbles] Oh, whatever.  [audible] Cool.  What's new: a working laptop.
 
 DAWN, ROB, AUDIENCE: [laughs]
 
-ARJEN: So, erm, as Rob said welcome everybody it's good to see so many faces in person still getting used to it I was at the summit last week there were even more people there and it was a bit scary almost.
+ARJEN: So, erm, as Rob said, welcome everybody!  It's good to see so many faces in person - still getting used to it.  I was at the summit last week; there were even more people there, and it was a bit scary almost.
 
 DAWN: [chuckles]
 
-ARJEN: but let's talk about what's new in AWS since last month for those of you new the first slide is always reserved for finally in Sydney services that were not in Sydney before they already existed but we did not have access to them but now we do and there's a couple of them to this time so first of all the new rds multi-ac option is available in case you missed the announcement for that I think it was last month?
+ARJEN: But let's talk about What's New in AWS since last month!  For those of you new, erm, the first slide is always reserved for 'Finally in Sydney' - services that were not in Sydney before.  Erm, they already existed, but we did not have access to them.  But now we do!  And there's a couple of them to- er, this time.  So, first of all, the new RDS Multi-AZ option is available, in case you missed the announcement for that.  I think it was last month?
 
 DAWN: Yeah.
 
-ARJEN: in case you missed that it is the ability instead of having an rds that doesn't do anything but it's only there for failover you can have two extra rds instances that run as read-only options.
+ARJEN: Yep.  Erm, in case you missed that, it is the ability, instead of having an RDS that doesn't do anything, that is only there for failover, you can have two extra RDS instances that run as, erm, read-only options.
 
-DAWN: Mmm. I expect that AWS are going to have to rewrite a lot of their exams this may be somewhat connected to the announcement that uh the solutions architect professional exam is changing it is going to drastically change the way that pretty much everyone running on AWS with uh any sort of redundancy in their rds architects their systems it's a huge improvement.
+DAWN: Mmm. I expect that AWS are going to have to rewrite a lot of their exams.  This may be somewhat connected to the announcement that, ah, the Solutions Architect Professional exam is changing.  It is going to drastically change the way that pretty much everyone running on AWS with, ah, any sort of redundancy in their RDS architects their systems.  It's a huge improvement.
 
-ARJEN: Yep.  It sure is.  the other ones are several new instance types um I can't recall at the moment what the r5b instances are did you?
+ARJEN: Yep.  It sure is.  The other ones are several new instance types.  Erm, I can't recall at the moment what the `r5b` instances are.  Did you?
 
-DAWN: Not off the top of my head the smorgasbord of letters and numbers is getting so complex that it's extremely difficult to keep track of them.
+DAWN: Not off the top of my head.  The smorgasbord of letters and numbers is getting so complex that it's extremely difficult to keep track of them.
 
-ARJEN: yeah it certainly is um and that's exemplified especially by the last ones which are the x2idn and x2iedn these are two instance types specialised in extra memory as well as extra network bandwidth and e stands for extra so that one has extra extra memory you know in case you need it it's basically designed for sap applications because no nothing else needs that kind of memory.
+ARJEN: Yeah.  It certainly is.  Erm, and that's exemplified especially by the last ones which are the `x2idn` and `x2iedn`.  These are two instance types specialised in extra memory as well as extra network bandwidth, and the `e` stands for extra.  So that one has extra extra memory.
 
-DAWN: yeah it's a very niche use case and the general expectation would be that very few people will use these
+DAWN: [chuckles]
 
-ARJEN: Yep. so let's move on to more general things serverless thank you chris
+ARJEN: You know, in case you need it.  Erm, it's basically designed for SAP applications, because no- nothing else needs that kind of memory.
+
+DAWN: Yeah.  It's a very niche use-case, and the general expectation would be that very few people will use these.
+
+ARJEN: Yep.  So, let's move on to more general things.  Serverless.
+
+CHRIS: [inaudible]
+
+ARJEN: Thank you Chris.
 
 DAWN: [laughs]
 
-ARJEN: um Lambda supports node.js16 this is good if you're using node I don't I try to avoid it but don't hate me for that but yeah it's great new versions always good
+ARJEN: Erm, Lambda supports Node.js 16.  This is good if you're using Node.  Erm, I don't, I try to avoid it, but- Don't hate me for that.  But yeah it's great new versions always good
 
 DAWN: yeah um the managed uh I can't remember what the uh exact terminology for this one actually is but this is the AWS managed kafka service um is the serverless version of that is now general availability I don't know how many people actually use AWS managed kafka servers but theoretically being able to do this in a serverless manner should save you some money.
 
 ARJEN: yeah just keep in mind that it's serverless in some air-quotes because it's not serverless like Lambda as in you still have things running
 
-DAWN: as I said theoretically we'll save you some money um your mileage may vary and do make sure that you work out the pricing before you actually switch over
+DAWN: As I said: theoretically will save you some money.  Erm, your mileage may vary.  And do make sure that you work out the pricing before you actually switch over.
 
-ARJEN: yep the other two announcements here are more quality of life improvements the SAM CLI supports being able to turn on X-Ray which is great and Step Functions has a new console for that is especially good for debugging I could tell you about it but I recommend just reading the blog post because that actually shows things and it's hard to paint a word picture around how well this works
+ARJEN: Yep.  Ah, the other two announcements here are more quality of life improvements.  Erm, the SAM CLI supports being able to turn on X-Ray, which is great, and Step Functions has a new console for- that is especially good for debugging.  Erm, I could tell you about it but I recommend just reading the blog post because that actually shows things, and it's hard to paint a word picture around how well this works.
 
-DAWN: yeah definitely glad to see step functions getting a little bit more love
+DAWN: Yeah.  Definitely glad to see Step Functions getting a little bit more love.
 
-ARJEN: on the container side everybody's favorite servers except for matt in the back there eks the eks console that you see all standard kubernetes resources so in the past it would hide some of the basic stuff for you now it just shows everything
+ARJEN: On the container side everybody's favorite servers except for matt in the back there EKS the EKS console that you see all standard kubernetes resources so in the past it would hide some of the basic stuff for you now it just shows everything
 
-DAWN: for people who use kubernetes this is definitely a good thing it's something of a personal bugbear of mine when cloud services abstract away things that they really shouldn't particularly for people who are just getting started with this sort of service it makes it much more difficult to follow what's actually going on so I'm all for this one.
+DAWN: for people who use Kubernetes this is definitely a good thing it's something of a personal bugbear of mine when cloud services abstract away things that they really shouldn't particularly for people who are just getting started with this sort of service it makes it much more difficult to follow what's actually going on so I'm all for this one.
 
 ARJEN: yep.  Kubeflow on AWS this is a project from AWS to did you remember what this one was we're not sorry
 
-DAWN: we're not doing very well this month are we yeah yeah that would thank you yes it's a machine learning tool to run your machine learning things more easily on kubernetes and this is specialised is focused really for running it on eks or just in the AWS cloud
+DAWN: we're not doing very well this month are we yeah yeah that would thank you yes it's a machine learning tool to run your machine learning things more easily on Kubernetes and this is specialised is focused really for running it on EKS or just in the AWS cloud
 
 DAWN: yeah probably in the vast majority of cases if you are running a machine learning workload there are almost certainly better ways to do it than on kubernetes so unless you're google probably not a tool that I would recommend that anyone try
 
 ARJEN: Erm, app mesh supports IPV6 as kubernetes and vpcs and all that got um better IPV6 support in the past it's good that the app match which is the service mesh service from AWS now actually supports being able to call those endpoints it's kind of a hard thing otherwise to use this in combination
 
-DAWN: yeah it remains to be seen whether the improved IPV6 support in AWS is going to result in more of the internet moving towards it but considering how long it's been a standard, I'm not holding my breath
+DAWN: yeah it remains to be seen whether the improved IPV6 support in AWS is going to result in more of the internet moving towaRDS it but considering how long it's been a standard, I'm not holding my breath
 
 ARJEN on the Dev and Ops then we've got CDK support for service catalog this is actually in two ways you can call server schedule you can use service catalog products items within your CDK applications and you can write your service catalog items in CDK instead of just pure CloudFormation
 
@@ -78,7 +86,7 @@ DAWN: yeah this is the this slide's probably more my wheelhouse than most of wha
 
 ARJEN: yep I definitely wish it had been around for a longer time as this is so much in your wheelhouse anything else here you want to
 
-DAWN: yeah um secrets manager with the usage metrics is one that I think is interesting I think there will be that's another one where I think your primary use case is going to be in really big orgs that want to understand how they're actually utilising secrets manager and potentially pick up some of those patterns that they might get where information is in there but people are sort of exfiltrating it and they're doing things in ways that they shouldn't be that's really positive for getting everyone around and being able to actually audit are people doing things in the way that they should be and Control Tower my old nemesis at the bottom there I'm very very glad to see that as slow as it has been the promised evolution of Control Tower is actually happening uh the customer provided core accounts in particular if you're trying to migrate from an AWS landing zone this makes it orders of magnitude easier to do because you can just take the accounts that Landing Zone generated for you and plug them straight into Control Tower so it's reaching the point where it's a usable service the other thing of note with the Control Tower is the Python 3.9 um basically last month Python 3.7 went end of life for Lambda but all of Control Tower all the Lambda functions it creates were Python 3.7 so a couple weeks later they upgraded all of those to 3.9 so you'd stop getting messages from AWS that you should update your Lambdas.
+DAWN: yeah um secrets manager with the usage metrics is one that I think is interesting I think there will be that's another one where I think your primary use case is going to be in really big orgs that want to understand how they're actually utilising secrets manager and potentially pick up some of those patterns that they might get where information is in there but people are sort of exfiltrating it and they're doing things in ways that they shouldn't be that's really positive for getting everyone around and being able to actually audit are people doing things in the way that they should be and Control Tower my old nemesis at the bottom there I'm very very glad to see that as slow as it has been the promised evolution of Control Tower is actually happening uh the customer provided core accounts in particular if you're trying to migrate from an AWS landing zone this makes it orders of magnitude easier to do because you can just take the accounts that Landing Zone generated for you and plug them straight into Control Tower so it's reaching the point where it's a usable service the other thing of note with the Control Tower is the Python 3.9 um basically last month Python 3.7 went end of life for Lambda but all of Control Tower all the Lambda functions it creates were Python 3.7 so a couple weEKS later they upgraded all of those to 3.9 so you'd stop getting messages from AWS that you should update your Lambdas.
 
 DAWN: Yeah it would be nice if next time they updated the lime just before they end of life them but we'll see how that goes
 
@@ -86,7 +94,7 @@ ARJEN: yep and then our last slide new instances so the big one here is probably
 
 DAWN: yeah definitely seeing um the AWS Graviton instances get first-class support now which is overall I think going to be very beneficial in most use cases
 
-ARJEN: and the other one that I want to call out here because it's pretty cool um is the rds for postgres cascading read replicas this basically means so you can in general you have you have five [muffled] read replicas for replicas for your instance now each of those five read replicas can have five read replicas and those can have five read replicas as well so that gives you a total of 155 read replicas if you have a workload like that please talk to me I would love to see that.
+ARJEN: and the other one that I want to call out here because it's pretty cool um is the RDS for postgres cascading read replicas this basically means so you can in general you have you have five [muffled] read replicas for replicas for your instance now each of those five read replicas can have five read replicas and those can have five read replicas as well so that gives you a total of 155 read replicas if you have a workload like that please talk to me I would love to see that.
 
 DAWN; [laughs] yeah I'm absolutely in agreement with that one it's funny how the same things caught our eyes this is I really want to see what workload is so read-heavy that you would need 155 dedicated read replicas I also really want to know how much architecting time went into this because this must have been a hell of a feat to pull off but there has to have been some customer request somewhere hey this is what we're looking for for this to actually come out so kudos to them I guess
 
