@@ -103,3 +103,19 @@ DAWN: Yeah.  Erm, Secrets Manager with the usage metrics is one that I think is 
 ARJEN: Yep.  The other thing of note with the Control Tower is the Python 3.9.  Erm, basically, last month, Python 3.7, erm, went end of life for Lambda - but all of Control Tower, all the Lambda functions it creates, were Python 3.7.  So, a couple weeks later, they upgraded all of those to 3.9, so you'd stop getting messages from AWS that you should update your Lambdas.
 
 DAWN: Yeah, it would be nice if next time they updated the Lambdas before they end-of-life them, but we'll see how that goes.
+
+ARJEN: Yep.  And then our last slide: erm, new instances.  So the big one here is probably the `c7g`.  These are the Graviton 3 instances that AWS, ah, pre-announced at re:Invent.  Erm, they are, I think, 25% faster, use like half the power- erm, ah, from the `c6g` instances - even bigger differences with the Intel machines, or AMD.  Erm, a nice side effect of this as well is that AWS once again made the `t4g` instance- er, the `t4g.micro` instance part of the free tier.  So you can play with ARM-based instances for free, just to see how it goes.
+
+DAWN: Yeah, definitely seeing, erm, the AWS Graviton instances get first-class support now; which is, overall, I think, going to be very beneficial in most use-cases.
+
+ARJEN: Yep.  And the other one that I want to call out here, because it's pretty cool, erm, is the RDS for Postgres cascading read replicas.  This basically means, so you can- in general, you have [muffled] five read replicas-  Er?  Okay.  You have five read replicas for your instance.  Now each of those five read replicas can have five read replicas, and those can have five read replicas as well.  So, that gives you a total of 155 read replicas.  If you have a workload like that, please talk to me, I would love to see that.
+
+DAWN; [laughs] Yeah, I'm absolutely in agreement with that one.  It's funny how the same things caught our eyes.  This is- er, ah- I really want to see what workload is so read-heavy that you would need 155 dedicated read replicas.  I also really want to know how much architecting time went into this, because this must have been a hell of a feat to pull off.  But there has to have been some customer request somewhere, 'hey, this is what we're looking for', for this to actually come out.  So - kudos to them, I guess?
+
+ARJEN: Yep.  And I think with that, erm, that was all the news.  So thank you Dawn.
+
+DAWN: Thank you, Arjen.
+
+ARJEN: And on to the speakers!
+
+AUDIENCE: [Applause]
