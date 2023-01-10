@@ -81,3 +81,25 @@ ARJEN: Erm, App Mesh supports IPV6.  As Kubernetes and VPCs and all that got, er
 DAWN: Yeah.  It remains to be seen whether the improved IP- IPV6 support in AWS is going to result in more of the internet moving towards it, but considering how long it's been a standard, I'm not holding my breath.
 
 ARJEN: Yep.  On the Dev and Ops side, then: we've got CDK support for Service Catalog.  This is actually in two ways: you can call Service Cata- you can use Service Catalog products - items - within your CDK applications, and you can write your Service Catalog items in CDK instead of just pure CloudFormation.
+
+DAWN: I really like this.  This is- this is a very, very good quality of life improvement.  Particularly if you have organisations where most people working there are developers, and don't necessarily have notable ops experience; being able to roll everything into CDK is really important for them.  So seeing more and more of the ops-y AWS services get CDK support, I think, is overall very, very positive for the ecosystem.
+
+ARJEN: Yep.  Erm, CodeGuru Reviewer allows suppression of files, folders.  If you use CodeGuru Reviewer, erm, or- well, I suspect not many people here, you can now tell it to not look at certain files and folders.  Erm, this can be useful if you have some legacy code that you're never going to clean up, or things like that.
+
+DAWN: Yep.  That's about it.  There's not really much else to say about that one.
+
+ARJEN: Yep.  Did you want to talk about any of the others?
+
+DAWN: Yeah, the, erm- the Incident Manager expanding the runbook automation is sort of interesting in a very niche way to me, because this is a service that I have looked at a few times and there's just - it- it's one of those services where you feel like it could be so much more than it is.  So I'm glad to see that there's a little bit going into that now, and I'm really hoping that- I'm hoping that there's more automation that goes into that service in the near future.
+
+ARJEN: Cool.  Then, on the security side: one of my favourite announcements in a long time is the SSO delegated admin.
+
+DAWN: Yeah, this is- the- this slide's probably more my wheelhouse than most of what we've had before.  SSO delegated admin is an absolutely amazing- this i- this is fantastic.  What it essentially allows you to do is rather than having to manage your AWS SSO configuration from your org management account, you can now delegate the management of the SSO into a separate account.  If you are dealing with a really big enterprise, where, say, you have one team managing the AWS platform but you're doing identity using something like AzureAD or Okta, this now allows you to delegate an account to the team that- essentially, your team that's doing identity management, so they can manage all of the SSO themselves.  I expect this to be adopted very, very quickly in a lot of big orgs, where that sort of communication between those two teams has been a massive bottleneck to things actually happening.  I've been in that situation once myself; I wish we could have just delegated it.  So this is- this is a really, really good announcement.
+
+ARJEN: Yep.  I definitely wish it had been around for a longer time.  Erm, as this is so much in your wheelhouse: anything else here you want to-?
+
+DAWN: Yeah.  Erm, Secrets Manager with the usage metrics is one that I think is interesting.  I think there will be- that's another one where I think your primary use case is going to be in really big orgs that want to understand how they're actually utilising Secrets Manager, and potentially pick up some of those patterns that they might get where information is in there, but people are sort of exfiltrating it, and they're doing things in ways that they shouldn't be.  So that's really positive for getting everyone around and being able to actually audit 'are people doing things in the way that they should be?'  And Control Tower, my old nemesis, at the bottom there, I'm- very, very glad to see that as slow as it has been, the promised evolution of Control Tower is actually happening.  Er, the customer provided core accounts in particular: if you're trying to migrate from an AWS Landing Zone, this makes it orders of magnitude easier to do, because you can just take the accounts that Landing Zone generated for you and plug them straight into Control Tower.  So it's reaching the point where it's a usable service.
+
+ARJEN: Yep.  The other thing of note with the Control Tower is the Python 3.9.  Erm, basically, last month, Python 3.7, erm, went end of life for Lambda - but all of Control Tower, all the Lambda functions it creates, were Python 3.7.  So, a couple weeks later, they upgraded all of those to 3.9, so you'd stop getting messages from AWS that you should update your Lambdas.
+
+DAWN: Yeah, it would be nice if next time they updated the Lambdas before they end-of-life them, but we'll see how that goes.
