@@ -28,6 +28,7 @@ The talks in this section rely on extensive background research, and sometimes p
 
 This is a list of all of the panel events that I've been involved in.  The list of names is the other people who were on the panel with me, and their names link to their public profiles.
 
+- **re:Invent 2022 In Review** with [Bojan Zivic](https://twitter.com/janvanbo), [Stephen Sennett](https://twitter.com/ssennettau), and [Matthew Gillard](https://twitter.com/mattgillard): ([video](https://www.youtube.com/watch?v=wfNZSWrpDEE&t=1463), [transcript](https://github.com/lisushka/talks/blob/main/transcripts/reinvent-2022-panel.md)) Melbourne AWS User Group, 2023-01-25
 - **Nothing About Us Without Us! Challenging companies and assistive technologies to do better** with [Florian Beijers](https://twitter.com/zersiax) and [Ben Mustill-Rose](https://twitter.com/bmustillrose): ([video, open captions on live delay](https://www.youtube.com/watch?v=eYKe6si3Q9Y)) Accessibility Manchester, 2020-12-01
 
 ## Workshops
