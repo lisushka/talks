@@ -31,6 +31,13 @@ This is a list of all of the panel events that I've been involved in.  The list 
 - **re:Invent 2022 In Review** with [Bojan Zivic](https://twitter.com/janvanbo), [Stephen Sennett](https://twitter.com/ssennettau), and [Matthew Gillard](https://twitter.com/mattgillard): ([video](https://www.youtube.com/watch?v=wfNZSWrpDEE&t=1463), [transcript](https://github.com/lisushka/talks/blob/main/transcripts/reinvent-2022-panel.md)) Melbourne AWS User Group, 2023-01-25
 - **Nothing About Us Without Us! Challenging companies and assistive technologies to do better** with [Florian Beijers](https://twitter.com/zersiax) and [Ben Mustill-Rose](https://twitter.com/bmustillrose): ([video, open captions on live delay](https://www.youtube.com/watch?v=eYKe6si3Q9Y)) Accessibility Manchester, 2020-12-01
 
+## Podcasts
+
+
+This is a list of all of the podcasts that I've been on.  The list of names is the other people who were on the panel with me, and their names link to their public profiles.
+
+- **Melbourne AWS User Group Podcast: Season 2, Episode 2] with [Matthew Merriel](https://twitter.com/NeutralPenguin) and [Jason Wood](https://twitter.com/sheriff6410) ([video](https://www.youtube.com/watch?v=F3WNg4MMwTg), [transcript](https://github.com/lisushka/talks/blob/main/transcripts/awsug-podcast-s2e2.md))
+
 ## Workshops
 
 These are hands-on workshops that you can complete in your own time.  The link will take you to a Github repository with all of the source code, and step-by-step instructions to complete the workshop.
