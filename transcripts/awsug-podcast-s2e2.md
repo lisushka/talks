@@ -1,1 +1,482 @@
 # Melbourne AWS User Group Podcast: Season 2, Episode 2 - Transcript
+
+hello everybody and welcome to the Melbourne AWS User Group podcast season
+2 episode 2. today we'll not be talking about news or
+rather we will be talking about news but it's a different kind of news because we'll be focusing on our new
+shiny Melbourne region and to do so I'm joined by Matt Muriel
+super excited and Jason Woods hey hello world for one and of course we're also joined by Don
+hi good to be here again um back from running around the US for
+probably all together too long well it's good to have you back here just in time for the super special
+episode so shed a new region we've been waiting
+for it for a bit over two years I think I forgot to look up exactly when it was announced reinvent 2020. so slightly
+over two years and it was promised in the second half of last year yeah nearly
+a month off reasonably close built up that Christmas excitement and then just lift the thing in yeah but now it's here
+pop the pop pop the champagne everybody's problems to solve uh wish you all a good night talk to you later
+maybe not maybe maybe not maybe not if you you know but at least if you've got
+your basic uh interests then um hey you know we've we've got your Basics covered
+so I think I speak for all of us when I just at the outside I want to make it clear that we're really happy that this
+region is here um that were excited about it and that everything we're going to say from this point on forward is set
+with utmost of love and just that we wish we could fast forward the region by
+about a year to make it useful we're customers we deserve the right to want more
+yeah yes yes happy happy ski it's pretty
+much what we expected but it's not what we want but we want all the shinies not just you
+know the the important Chinese yeah and the old Chinese basically yeah yeah you
+know there are some interesting things though as saying you pointed out in other
+places the um you know the the standard free tier now changed to uh your T3 yeah
+and so there's um there was some you know logical but you know surprising
+things that we weren't expecting there so you know that was an interesting yeah so just as a recap we're recording this
+on Wednesday the 1st of February so hopefully a few things we say will be
+completely outdated by the time you're actually listening to this
+yeah that that would be nice but yes you know if you're going back and having a
+having a look at you know what did we say last year then yeah hopefully everything's there but hopefully people
+will listen to this sooner than than any years time I hope so otherwise I will have felt badly with the editing
+uh we have faith in you alien but yeah generally speaking let's have a look for
+a moment on what we have in our new shiny region so there are a total of 48
+services that are in one form or another available so just because it says the
+service is available be clear that does not mean that everything from that service is available obviously big point
+there is easy to you won't get every single instance type in your new written
+you want to get a lot of instance types in your new shiny region yeah and you
+know maybe not in every AZ as well which was something that we'd saw in Sydney
+for quite some time you know so that's something else to to be aware of
+um now I know a few times we had you know some customers here in Sydney that then wanted to uh try a uh at the uh
+sort of in a different AZ but that was the the incense type was in two azs but
+not the third one which just happened to be the one that they wanted to uh to to test in So yeah so there are some things
+that you'll need to to be aware of and check out when even you know when incense types are there
+um yeah it's happened before it could very well happen again with Melbourne
+um so you know yeah just be aware yeah exactly as Matt earlier alluded to that
+really isn't a lot of instance types available right now so on the AMD 64
+side so the original pre-gravidon type instances we have more choices but that's all last generation
+still so it's the R5 c5s and m5s none of the sixes there and as well the d3s and
+I3 instances and those are the only ones that are available at the moment which I carefully checked by clicking in the
+console and seeing every other option grayed out or not so obviously new instance types will show up over time
+all the instance types just won't appear and that's why something like the D3 is now on the D3 micro is now our free tier
+instance type which is nice and something I should do in every other region as well but the disappointing
+thing I guess for from sort of where I'm sitting we've been unfortunate oh and by
+way I mean uh Australians um have been unfortunate in that for years now uh we've only had a single
+region and this was kind of the one shoot to go yay
+multi-region Dr multi-region failover where you've got data sovereignty or
+latency concerns can actually be a real thing and at least as it stands today
+yeah probably not as drop in replace as
+we were probably hoping it's pretty clear that regardless of whether or not you use ec2 RDS any of those sorts of
+core Services you're either going to need to have been very lucky in the instances you picked in Sydney or you're
+going to have to do an apples and oranges to get it to to work which yeah
+are you better to do apples and oranges now or are you better to wait and see
+how long it takes them to iterate on a new region because if you look at the AWS news RSS feed every other post is
+about AWS releasing services in a region somewhere time will tell how quickly
+they add to Melbourne my gut feel is probably won't start straight away my
+guess is they probably want to bed down what they've got first before you know expanding too rapidly but hey I've been
+wrong numerous times before and I'm sure I'll be wrong again maybe this is one of them maybe it's not yeah but I mean at
+least with that VR law if your main concern is your data then you know at
+least the basics you know S3 buckets your you know EBS volumes if you could
+get those sides of things across no EFS I did not mention any of this
+that's that's the one that's the one that caught me out was yes uh no yeah I
+I not quite loved that up in the available Services just yet so I was like yes I know I know S3 will be there
+I know EBS is there and then just say too that along with that you know one of
+the services that I was a little bit disappointed with that didn't launch was AWS backup you know which I think
+I feel some pretty cool service if you want to run you know ec2 instances you
+know I mean that they're just still got your abs snapshots and it looks like that a lifecycle manager is there so you
+can lifecycle manager's not terrible so at least you'll you can do something there to protect any instances you've
+got it's it's nowhere near as featured as AWS backup or you know some of the
+third party ones but it's serviceable but yeah you know I would have liked or seen awares back up in
+um but uh yeah so but yeah with some sales system actually one of the big
+ones I also find that's missing is something simple like Transit Gateway um if you need if you create or if you're
+going to use a new region it is usually considered a nice thing to be able to connect to it from the old one yeah yeah
+definitely that's that's sort of a big one that's um that's that's missing because yeah
+you want to try and keep your networking consistent and your Transit Gateway
+um yeah that's that's a big output yes with everything let's fingers crossed
+and hope that's you know I hope that one's that's one that will come sooner rather than later
+um so yeah and just to go back a little bit on the um the ec2 instances so just
+having a look at the at the pricing page which has the number of instances so
+Sydney currently has 434 available instances and Melvin has it seems like
+118 let me just flip back to it yeah 118 in some floats so yeah there's about a
+quarter of available instances there that's actually better than I thought when I just did the official search in
+the console yeah it might be interesting to see too whether you know they get some of the older instances
+as well so you know they just say the t2s aren't there and they're starting at
+t3s so where you know Sydney has you know some of your old instances your r4s
+and and the like and it's like that that you know maybe they'll never come to to
+Melbourne and so you know well it's it's sort of a quarter of what Sydney has you
+know it may be that we'll we'll get close but not to the same amount because they'll you know sort of drop all those
+obsolete instances or the the types that they wanted people to move off my guess
+from playing around with some of the regions which have been introduced before Melbourne is some of those
+instance types we will never see because I've done some things with multi-region before and it is quite interesting to go
+through and actually see in every region um particularly those free tier
+instances in every region are very subtly different depending on exactly
+what got deployed when so certainly in some of the newer regions um the teachers are not there and have
+not come have never come for Regions which have been around for quite some
+time the other thing that I think will be really interesting there is if people do decide to take that multi-region path
+uh how how many companies are still running on these obsolete instance types
+and are now going to decide that they have to re-architect everything just in order to use multi-region thanks
+yep probably but yeah I suspect you've got a good point there done there's
+gonna be a lot of those yeah okay so because yeah there were some big shifts in architecture at some point and that
+requires a whole bunch of updates but then yeah it's probably a good thing anyway if people start upgrading the
+instances because I mean having also recently looked at
+recently as in earlier today looked at a comparison chart of different types of
+ec2 instances for the purposes of deploying some new for the purposes of
+basically deploying an entirely new setup for something
+the price differences when using the newer generation instances are
+incredibly noticeable like looking at um I was looking at both the memory
+optimized instances and the compute optimized instances and if you look at
+basically the m6s and c6s the M5 and c5s are not even competitive and anything
+older than M5 there's just absolutely no point whatsoever so it will be really
+interesting to see and I'm suspecting um Matt said Banks I'm suspecting it's actually going to be anyone who has a
+requirement for low latency and anyone who has a requirement for that uh
+multi-region backup and a lot of the companies that fall into the latter
+group will already will already be doing this but they'll potentially be doing something like that multi-cloud so you
+you solve that yourself or you do the thing that you do the thing that gives the sort of job security and you hire a
+consultant to solve it those sorts of scenarios you potentially massively cut your complexity by moving
+everything to Melbourne and you might get the instance upgrade you know you might kind of have to talk to your instance type upgrade yeah into the
+bargain right so massively massively reduce your complexity and potentially
+actually reduce operating costs because the two operating costs that you then lose if you're currently operating
+multi-cloud are the operating cost of okay we're using really old instances if
+you are but also the operating cost of hey wait a minute we suddenly don't have these massive data egress costs and data
+Ingress costs to get everything from One Cloud to another yeah I think there will still be some requirements for the
+multi-cloud but I'm all in favor of just using that as a data backup Source or
+Target um but yeah with the new instance type style but I was really surprised by how
+little graviton instances there are in the new region so for easy to there's a
+couple options m6s originally only the ones with the native SSD the big ssds
+included but now also just regular m60s and that's the only graviton source I
+saw you can't use them in RDS you can't use them in Lambda can't use them anywhere really and considering how much
+I have been feeling that it was just pushing us to use them that really surprised me yeah it all it almost feels
+like and look we've seen this when I release new Services it's it's the MVP
+um almost almost thinking of it as a quasi Canary
+um kind of release Here we will give the people the basics because let's face it
+you know a lot of the core Services you know your lambdas your dynamodb RDS ec2
+S3 like there is enough there to build most common bits and pieces the one big
+killer on the the compute side is obviously a lack of kubernetes personally don't care I think my
+personal opinion on kubernetes is well documented at this point oh yes um
+but but it's it's like let let's give the people enough to be able to do
+things it may not be a hundred percent of what they want but it will be enough for art for AWS to bed down the services
+to validate the use the usage validate capacity planning and then you know
+start directing the where do we point the fire hose as far as what we build
+and release next um and that was only kind of sort of a pun um of a reference to a lack of um
+Kinesis but yeah yeah but interesting so that as well you know been there and
+pointing things out you know I think one good thing to to for will to remember is
+is it's missing a service that you really want you know talk t-ray the best reps let them know because you know the
+more things that people ask for you know as the heat map goes up they're more
+likely to roll those Services out that the you know most people are asking for so you know don't be don't who wants to
+take bets on how many pfrs are going to be raised in the next 30 days yeah I
+would not want to be an AWS SAE dealing an essay or a time dealing with any of
+the customers who are trying to move things into Melbourne right now because I imagine that the phones are probably
+ringing off the proverbial hook pretty much yeah because we all know that what
+everybody wants and so please make sure you file your request for work dogs
+um everybody well there's actually a funny little
+clock there because if you run a um and this is this is something that
+I've seen people do when they send out the links if you run your AWS accounts
+off AWS SSO and you use a custom URL you
+get that prefix dot awsapps.com start which will take you to your SSO sign-in
+portal but if you have just prefix.awsapps.com that takes you to the
+work docs portal so I'm actually mildly curious if you went in it whether it's
+going through one of those things I don't even I don't even know if SSO in Melbourne is active yet as I said on the
+pattern yeah I was figuring probably not as I said on the panel I have all of my
+stuff set up in error because it's a region which things come to fairly quickly but I'm curious what will happen
+if SSO gets to release before work docs because that url.awsapps.com actually goes if you
+omit the start at the end it actually goes to the work docs portal so I've seen multiple times people send out the
+short URL I wonder what would happen that that that's going to end up being a
+breaking bug for someone at some point yeah interesting yeah I suspect it will come around the same time so that they
+can work around that issue because I so hate hate hate that you need this let's
+start I have spent so many so much time telling people to put this list out
+behind it when they couldn't log in same it's just one of those weird quirks of
+how the uis are set up yeah it's just like just just bookmark the URL and
+click your bookmark don't type it in yeah well it's not that you can't type it in
+you just have to know what it is that you're putting into the console right yeah if you know what it is that you're
+putting in you end up being fine but there are a lot of people who don't and
+that's where you then run into issues yeah like everyone I'm sure everyone who
+works with awss so I refuse to call it IAM identities
+it's just on principle alone yeah yeah everyone who works with awssr has been
+caught by that at least once right yeah yes yes the service formerly known as
+yeah I still don't understand why they change why they changed the name of that
+it's the most baffling thing I actually don't mind the identity center part of it it's just that they had to put I am
+in front of it that's a bit of a shame yeah yeah yes maybe it was a Monday for full stroke that just went too far again
+I repeat ATM machine yeah okay so your PIN number yes honey how all of those
+examples come back to Banks isn't it uh yes that's um but it is you know for
+as as much as we're hanging on things you know they said it's that are you you
+know we are all super glad that it's here um you know now you know definitely now
+gives us options for um you know the in region you know region this time meaning in country uh
+confused type but yeah it gives us that in country sort of the uh you know extra
+region for those you know services that need to have um data residency you know I mean yeah
+um availability zones are are pretty safe but you know if you really risk
+adverse um you know having that separation between Sydney and Melbourne for your for your uh for your data
+that's that's a good thing risk averse you've got client you've got you know compliance requirement
+um this is this is huge um for a large number of Industries
+um and as as Dawn was sort of saying before look those those who have needed
+multi-region multi you know data center multi location um previously have done it through the
+use of multi-cloud or a hybrid on-prem solution or something and this gives you
+the option to you know centralize to standardize missing instances
+notwithstanding uh Missing service is notwithstanding so like it this is this
+is fantastic like this is going to keep a lot of people very very busy for
+um at least 2023 this is going to keep a loss of Consultants very very employed
+for at least two thousand well that too yeah yeah yeah considering we're all
+consultants in on this like on this podcast it's like we are all looking at
+very busy years I actually want to pick up on the data center uh comment that you just made
+there because that's quite interesting in that we sort of look at this as a lot
+of people will have done this a lot of people who have that compliance requirement will have done this
+basically multi-cloud but the other thing that we might see here is this
+might actually lead to quite a lot of places decommissioning their data so centers which they've been using for backup purposes
+and again obviously you know that's going to keep Consultants very employed
+for at least at least 12 months so that's nice but it's also going to be
+quite interesting to see then how that changes things like Data Center capacity
+uh around the Melbourne region and in the Melbourne I.T Community because just
+thinking about it and thinking about sort of the history of some of the big players that I know are still using some
+sort of data center in Melbourne I suspect a lot of those big players now that they potentially can are going to
+be in a very big rush to obsolete they're going to be in a very big rush basically to start turning things off
+well let's like let's let's be frank here like Colo pricing is horrendously
+expensive in Australia oh yeah especially in Melbourne and in Sydney
+yes and it's not just that you then also have to take into account all of the costs for maintaining that data center
+all of the costs for maintaining your configuration around it your setup and networking infrastructure Staffing
+absolutely and you've got to have I think that my understanding from talking
+to people who've worked in the on the data center side of things in the past is the cost of having people come in and
+maintain your data centers is hideously expensive here in Australia in general
+just because we don't have that many people who can do it you know yeah a lot
+of a lot of people who have the ability to do that have gone whatever money
+takes up right because it's a it's a niche skill set it's a niche skill set
+which is incredibly valued by places that have historically needed to
+maintain some sort of data center some sort of data center for whatever reason and a
+lot of the people who are good with that sort of thing have jumped to Cloud providers and they've jumped to others I
+cannot I cannot physically remember the last time I stepped inside a data center I used to live in them and it's probably
+it it would be safe to say I have probably not stepped inside a data center since probably six months after
+AWS launched in Sydney yeah I have the unique distinction I think I'm not sure
+if it's actually unique to people on this call because I don't know how much you've been in data centers I am but I
+have the distinction of never having set force in a data center at all because I'm in that age bracket and in that
+bracket of people who came into the IT industry Cloud first lucky you you make me feel all done
+but for those that are listening you know we we've got video tunes on here but you know you can see see the green
+in net speed and especially in mind you know I used to live in data centers
+uh you know my my family was sort of like you know aren't you cold and things of like I used to live in data centers
+and walk around in shorts and t-shirts um because I was just so used to walking outside onto Collins Street in the
+middle of summer in a Woolen jacket and going why am I sweating all oh right
+it's 40 degrees
+yeah you're the weird guy yeah to me Frank
+you would have always been the weird guy but
+yeah but you know you're definitely right you know you know a lot of the worked in in the data centers and and
+stuff you know there's there's not as many people around now that do that or
+do it well you know and a lot of us have all jumped jump to Cloud yeah because it
+became the self-fulfilling prophecy where everyone worked out that cloud was where the industry was headed
+and as people got out of the data center racket it suddenly became apparent that
+there there's just not enough people who can do it and and do it well anymore yeah and if you're doing that type of
+thing um you know you then got the hyperscalers that you know obviously you
+know on our side of the fence we code it all up and that but there's also that
+side that's definitely needs to maintain all of the infra that that we're happily
+uh coding up for and I bet those places are a lot more interesting to work for
+anyone that's he actually wants to touch metal then you know you're uh even your
+Enterprises as you know the the resident the resident person who tends to point
+out accessibility things is data center work is actually really hard work you have to be like I not only have I never
+set footing one I probably couldn't physically do it because you have to be quite fit
+um you have to be quite physically well too just to be able to meet the demands
+of okay I have to run around you know I have to run around data centers pull
+cables I have to be able to stretch I have to be able to bend so it's particularly if you're working on that
+the hardware side it is really hard work and Wrecking UPS yeah oh my God those
+things are heavy um there's a reason there at the bottom of the rack
+yeah exactly yeah and maintaining a local
+cyber Farm is completely different to doing anything in a data center at that
+scale and it's you know it's not easy work but there aren't that many people who can do it and it will be interesting
+to see because I do suspect that a lot of companies that have had that requirement are now going to be rushing
+to decommission it as quickly as they can so it'll be really interesting to see how that works out does it
+noticeably change the demand for data centers in Australia yeah it's it's a
+really interesting line of thought there for for that because I mean you know not
+only are you getting out but you know you've got different infrastructure to
+keep management of and you know keep your your cmdb certain documentation for
+how do we how do we practice physical stuff how do we config all this physical stuff different to our Cloud
+environments whereas now yeah ideally with your Dr it's just you know create
+another pipeline to this location and being away you go or you know or deploy
+it using the same pipeline depending on what sort of networking Tool uh infrastructure as code tools rather
+you're using yeah yeah or or even if you just you know want to go down to a really basic level if you're just using
+cloud formation templates and yeah manually just being able to go like here we go here's all the cloud formation
+templates I've got for this and just manually dump it into your other environment it's super easy to just spin
+it up especially I mean the um the services are available yeah that's going to be the sticking
+point well we're talking about moving out of the data centers if you're currently in a Data Center and you're going to move to AWS you're not used to
+all the 200 something Services anyway so then you basically go through the same
+thing that we've had the chance to go over eight years ago or whenever Sydney opened it didn't open with a lot the
+only difference is now that's by the time you get started the new services will keep coming in at a much faster
+that is a really good point like I remember a few and by that I probably mean like four or five five or six re
+invents ago I vaguely remember I might have been jassy it might have been
+Werner saying that like only five or ten percent of all workloads had moved to
+the cloud some really small number and what you're saying sort of is a really good reminder like we we live AWS like
+all day every day like we've been doing this for a long time now like you know we're sitting here complaining about the fact that we don't have the creme de la
+cram um in Melbourne but for most I.T people I would probably say you're probably
+right like what what is in Melbourne today is what you would probably start with you've got ec2 you've got RDS
+they're your cause you've got S3 for your object storage you've got Lambda to get started in the event space you've
+got event Bridge you've got dynamodb right so you've got your core bits and pieces there you've got step functions
+if you want to go a little bit more advanced and let's face it it's not until you get all of that under your
+belt that you're going to be looking for kinesis or security Hub or AWS backup or
+you know any of these more advanced services that you sort of go and now I want X and if AWS sort of take three
+months six months nine months to bring some of those things in maybe that's not necessarily A Bad Thing and for those of
+us who have been doing it the whole time well we're already well versed in not having service or feature parity cross
+region because let's face it we've never had features so feature or service parody across region and never will and
+I think the other interesting point that comes out of that is that you look at
+anyone who has the need for maybe not so
+much on the latency requirement but anyone who has the need for that redundancy requirement if you have that
+need you're not using Kinesis as part of your core workload most likely you're
+not using certainly if you're in Australia if you're in any of the areas where multi-region has been a thing for
+a while you probably are but you're not using you know you're not using Kinesis as as part of your workload um you're
+not using a sage maker uh you're not using a lot of these so a lot of these
+AWS custom rolled Services which are used for very specific use cases you're
+using ec2 you're using RDS you're using a Lambda you're using stack functions if
+you're in one of those highly regulated environments which has requirements
+around data backup data sovereignty you are not doing these things you are not
+using these Services it's just a simple fact that the reality of the situation is you are going to be using the core
+Services which are already in Melbourne now again whether you're using the correct instance types or whether you
+have all of the underlying support for the things that you want to do that's an entirely different matter but if you're
+you know if you're running these Mission critical workloads you're not using deep composer at any point in the workflow
+yeah yeah exactly I do want to point out one thing though if you're starting out in the Melbourne region fresh coming to
+AWS and you look at all the available surfaces do yourself a favor and ignore
+that simple workflow is there yeah what what is with that wait a
+minute simple workflow service made it into Melbourne yes you did it is
+really I want to know ah which Enterprise customer in Australia is
+using that because there there has to be a customer that demanded that that be there oh yeah that was absolutely a
+request to the times no actually I think it's on the list of this of services that launch in every new region ah
+there's a list on the infrastructure side and it's I'm pretty sure it's on there yeah maybe it's just it's like
+just a really simple thing that's you know service it's a simple thing
+um yeah maybe it's just like uh here we just throw this in because with everything else that we do we'll yeah it
+because it only uses ec2 and ec2 is going to be there anyway so therefore yeah
+we may as well push the button right yeah yeah maybe maybe secretly it's just
+an API to Amazon Mechanical Turk anyway
+I mean I that's the kind of thing you say that jokingly but I'm sure that
+there are some AWS services that have those Integrations snuck in I'm sure
+there are okay but um one thing that Don sort of um figured my well I'm talking
+about latency you know one of the the good things that we can do now that
+we've got this this region I was going to a ward the other day um and it you know the question came up
+about you know have you have you selected your you know your location based on you know uh latency and your
+requirements Etc you know and traditionally that has been uh you know ignore this question due to
+architectural you know yeah yeah we we've seen them because it's the only
+region um you know now we actually have a choice that question within the uh well
+architected reviews can't actually have a meaning yeah we pick Sydney because it's missing from Melbourne
+uh that is just going to be the reality for a while I suspect yeah it was
+something that I thought of and we had a little bit of a chuckle when we did that War uh and came across that question
+it's like yeah you know dig that off because it was at the time when it was launched there was no other option
+um yeah but um but yeah meow you know some of those little things I think
+we'll find going forward now like councils of that that war question on those things like why are we doing doing
+this well hey you know yeah we're doing it you're designing something when you're talking to a customer like it's a
+thing now like it's a discussion point that needs to be I think I'm gonna need to to individual a Jew because it's what
+9 35 at night and I have a three week old that needs my attention
+um but I was what I I did just want to say one other thing it's like we're sort of joshing here about the fact that you
+know this is missing that's missing we missed it we wish this was here we wish that was here how we're gonna live with
+only 125 different instance types 118 118 sorry um two two bits wow like are we just
+like the whiny customers of like all time here like and secondly we now have
+the ability to do multi-region cross-state architectures
+and solutions having done nothing ourselves to accomplish that but sit
+here for two years going is it done yet is it done yet is it done yet why didn't you hit 2022 and that's kind of like one
+of the big things that a lot of people still may not necessarily remember is the clouds constantly evolving and
+expanding and like if we back like we were talking about Data Centers before if we wanted to put another region on
+ourselves that is a Monumental engineering effort like excluding the
+cost conversation just the raw effort and materials and infrastructure needed
+to bring up a new site and a different state is mind-boggling and the fact of the matter is it's still way harder to
+enable the Melbourne region in your AWS account than it should be that is perfectly legitimate gripe but it is way
+easier than doing it yourself yeah it's not just the engineering
+requirements it's the people requirements as well the number of people that you need to set up a data
+center then the amount of time and money that you need to sink into the HVAC
+systems that you need to sink into the cooling systems that you need to sink
+into redundancy backup power setting up Network links that's a lot of time
+that's a lot of money that's a lot of people that are required to set things up it's a lot of people that are
+required to maintain the HVAC system so I'm actually going to say the bad word that nobody expects here because one of
+the things that we saw when cryptocurrency and web free and all of
+this nonsense became a thing was how much people were paying for those
+overheads you know to set up their Bitcoin mining Farm well their ethereum
+mining somewhere there I I don't know their algorand mining Farm or some of these weird names that I've never heard
+yeah insert random crypto coin here yeah yeah insert random crypto crypto coin or
+web3 ecosystem or whatever they're calling it here but we saw how much
+strain the requirements for all of that overhead were putting on you know as
+you've got people setting up these crypto mining Farms all over the world
+that's been happening with traditional data centers for a very very long time
+and it's exactly the same requirements it's exactly the same overhead exactly the same people that you need so yes on
+one level we're sitting here complaining about this but this is it is also these
+are things which unless you are a big bank or a company that has a lot of money in the bank or a company that has
+massive amounts of venture capital funding you are not doing this yourself because it so okay yeah you have to go
+in and enable the Melbourne region that's five clicks the other thing which we haven't really talked about all that
+much which I do want to bring up related to that point is it's not just that we have the Melbourne region now we also
+have the powerful local Zone yeah and I will let you guys talk to talk to that
+on your own obituary thanks for being here Matt
+uh the scene was a puff local Zone that I sort of wanted to talk about here is it's not just now around that latency
+requirement obviously the subset of services that you can get in the perf local zone is quite limited but what
+that enables you to do is the latency difference between Sydney and Melbourne
+is you know maybe 50 milliseconds at maximum but having because Sydney and
+Melbourne geographically are quite close to each other having even The Limited subset of features in Perth means that
+if there are workloads that you really need to run at the edge on the western side of the country that is now a thing
+you can do yeah definitely definitely um you know that was that that was
+really good for you know those people because you know it is a long way away yeah and you know as limited as the
+local zones are um you know there's still a lot of core functionality that you can run out there
+and for those you know things that you know really latency is important yeah
+you can tip them out there um you know do more than you know what you could with uh an edge location you
+know that's even even more limited but um yeah you know you can actually run stuff close to close to you yeah and the
+Perth latency difference is really big so one of my birthday's colleagues he
+did a check and an instance in the Perth local Zone from his home and be in a
+connection he can reach in 15 milliseconds that's quite good whereas Sydney would be 58 milliseconds so
+that's a massive change yeah and for my expectation would be you know that's
+going to be vastly dependent on quality of your internet connection and things you might there are some scenarios where
+you might actually see improvements that are more like going from triple digits
+down to double digits some use cases and that being able to do that is that's
+really good and I'm interested to see I probably won't be in Australia by the
+time it happens but I'm interested to see when that becomes a fourth legis region because I suspect that in 10
+years or so by the time that I am well out of the country that will be what we'll be looking at an AWS region in
+Perth at some point possibly yeah if it keeps growing um in a way the local zones are above to
+Growing because in that in that regard we've got another region coming up
+around us fairly soon like next year the Auckland region should launch but before
+that the Auckland locals on will arrive yeah I thought that was an interesting
+um sort of thing having a sort of like an interim local Zone uh you know just
+before the region comes up yeah it's it's a bit like the US Saka region but
+then sped up instead of staying at a limited region for 10 years I quite like
+it because it means that it all things it gives AWS the ability to
+gauge demand the other thing that it does is it means that people can get
+started it gives people the ability to play around to figure out what they are
+what they can do to understand how latency improvements how all of the
+things that you get when you move over to a region that's closer to you can
+benefit you and then it sort of gives AWS the chance to actually validate
+commercially is this a thing we want to do before again they sing massive
+amounts of money into configuring data centers and such so I I think it's an eminently sensible way of doing things
+because it also like it gives people the ability to get started and do something
+even if you can't run whatever workloads you want to on the full features that
+you can do something yeah I also thinking about like you know would it have made more sense to do you know
+Wellington local Zone and then apply to Auckland um but then you're thinking about that
+would be because the Auckland local Zone will be tied to to Sydney if they had
+Wellington local Zone and then an Auckland region you know would that Wellington local Zone they'd still be
+paid for Sydney that that could be a nice computer yeah that could be
+confusing so I suppose yeah I have the the Auckland local Zone and then once
+you deploy your read engine okay the local Zone goes away yeah probably makes
+more sense yeah um super interesting time to be working in to be working in AWS in Asia Pacific
+or in Oceania really yeah I just think you feel like it's going to be interesting to you know to also have a
+look at you know for Adelaide to people in South Australia to make the choice of
+where do they where do they connect to Melbourne or Sydney
+um you know have a look at you know what are your latency differences yeah you
+link from from memory having played around without myself in another cloud
+provider at one point um Melbourne is generally faster but not by much yeah you're talking single digit
+single digit milliseconds generally um and that that obviously depends on the quality of your networking quality
+of your data equipment it depends on the quality of them The Links of the data center are from memory Melbourne is
+generally very slightly faster so it probably come down to
+um you know which which which state does SA um hate belief
+do you have more of a grudge against Melbourne or Sydney um yeah or realistically it might be
+that because the latency difference is so small it's going to come down to one of two things that will be feature sets
+so is everything that we need available in milk is everything that we need actually deployed in Melbourne or
+availability like can we get the instance types that we want in the region that we want to deploy this to
+because that has been an issue in Sydney that for some instances and some service
+types the compute capacity is just not there yeah yeah definitely but yes
+there's just a little bit of a joke but uh but yeah you know still an interesting question for for if you're
+in Adelaide which is really the there's there's no I suppose really clear option
+between you know Melvin Sydney as you say like the lights is sort of negligible between the two
+um you know feature steps going to be a big one until you know Melbourne matures and gets most of the stuff that's there
+there's there's obviously that question there as opposed to like you know Perth now you know we'll have has the local
+zone so there's some value you know you most likely jump into to Sydney
+um you know really you'd probably still go to Sydney but they'll also go to local Zone exactly and that local Zone
+will be tied to sending so yeah you know there are you know you've got some that are obvious which region do we do we go
+to um the chair I just yeah I'm thinking Perth oh sorry South Australia is that
+interesting one where it's you know toss a coin yeah yeah so yeah and it's going
+to depend on exactly I mean the the ultimate Frozen the IT industry right it depends it's going to depend on exactly
+what you want to do exactly how you want to do it and yeah maybe which city you
+hate the least yeah let's hope most choices are a little bit more pragmatic than that would be nice but people are
+people right and with that I believe we have gone on
+long enough we're happy we've got the new region definitely still still party poppers yes we are spoiled as much as
+we've complained about things that aren't there I think the overall feeling is Party Poppers yay
+um it's here yeah yeah and also we're not going to be out of a job
+Consultants it's going to be consultants in Australia are not going to be out of
+a job in the near future and depending on exactly what you're doing I'm suspecting that for a lot of Consulting
+companies the phone's going to be ringing off the hook about now cool so with that I want to thank everybody for
+listening of course I also want to thank our sponsors CMD Solutions the user
+group of school sponsor as well as ferson and C4 who are silver sponsors again this year all three of them then
+of course Matt has already left us so thank him again
+he's quiet so don thank you for coming thank you for having me as per usual
+it's always a pleasure and Jason thank you as well thank you Ian
+um always fun to to be on here and chatting with Matt the one as well and uh thank you for hosting and of course
+if you want to reach out to the user group um give feedback on our talk disagree
+with us in any way you want you're welcome to do so you can find us on social media we are on LinkedIn these
+days as well active Edwards use the group and then Melbourne in Brackets you can also find us on Mastodon as AWS melb
+at edwardscommunity.social and if you're actually still using Twitter we're still
+there not active but we're still there as at AWS melb and of course join the
+slack which you can find on our website at melb.ad AWS ug.org and with that I
+beat you all a good day good night good day good night good time zone appropriate Gracie
