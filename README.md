@@ -36,7 +36,7 @@ This is a list of all of the panel events that I've been involved in.  The list 
 
 This is a list of all of the podcasts that I've been on.  The list of names is the other people who were on the panel with me, and their names link to their public profiles.
 
-- **Melbourne AWS User Group Podcast**: Season 2, Episode 2 with [Matthew Merriel](https://twitter.com/NeutralPenguin) and [Jason Wood](https://twitter.com/sheriff6410) ([video](https://www.youtube.com/watch?v=F3WNg4MMwTg), [transcript](https://github.com/lisushka/talks/blob/main/transcripts/awsug-podcast-s2e2.md))
+- **Melbourne AWS User Group Podcast**: Season 2, Episode 2 with [Matthew Merriel](https://twitter.com/NeutralPenguin) and [Jason Wood](https://twitter.com/sheriff6410) ([video](https://www.youtube.com/watch?v=F3WNg4MMwTg), [transcript](https://github.com/lisushka/talks/blob/main/transcripts/awsug-podcast-s2e2.md)), 2023-02-06
 
 ## Workshops
 
