@@ -88,7 +88,7 @@ ROB: You didn't have to queue up with the regular folk.
 
 MATTHEW: Yep.  So normally, for those who have never been, er, keynotes are- well, actually, re:Invent is a queuing- an exercise in queues.  Erm, but keynotes especially, you have to get there, you know, it starts at 0830, you have to get there at- I don't know, 0730, probably thereabouts? erm, to get a reasonable chance for a- for a good spot.  Erm, but as a- you know, certain sections of the community get reserved seating, so I think I managed to get in about ten past eight, and, you know, pretty much right up the front.  So that keynote was well worth it.
 
-ROB: Cool. Dawn did you manage to make it?
+ROB: Cool. Dawn, did you manage to make it?
 
 DAWN: I very deliberately didn't go to any of them, because the advice that I got was 'make sure that you get to things like the workshops and the chalk talks which aren't recorded'.  So, I scheduled my entire re:Invent around going to the things which were not going to be recorded, and came back with some- probably some more interesting insights than I would have got from the keynotes.  I- I have them on my list to watch back, though.
 
