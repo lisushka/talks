@@ -57,7 +57,7 @@ The talks in this section are generally 15 to 20 minutes long, with minimal back
 ## Interviews and Podcasts
 
 - **Melbourne AWS User Group Podcast**:
-  - [Season 2, Episode 2](https://www.youtube.com/watch?v=F3WNg4MMwTg) with [Matthew Merriel](https://twitter.com/NeutralPenguin) and [Jason Wood](https://twitter.com/sheriff6410) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/awsug-podcast-s2e2.md)), 2023-02-06
+  - [Season 2, Episode 2](https://www.youtube.com/watch?v=F3WNg4MMwTg) with [Matthew Merriel](https://twitter.com/NeutralPenguin), [Arjen Schwarz](https://twitter.com/ArjenSchwarz), and [Jason Wood](https://twitter.com/sheriff6410) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/awsug-podcast-s2e2.md)), 2023-02-06
 - [**What's New in AWS - September 2022**](https://youtube.com/watch?v=dYQkMA0_IS0&t=487), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2022-09.md)): Melbourne AWS User Group, 2022-09-28
 - [**What's New in AWS - July 2022**](https://youtube.com/watch?v=sjKzPVz3sII&t=1610), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2022-07.md)): Melbourne AWS User Group, 2022-07-27
 - [**What's New in AWS - May 2022**](https://www.youtube.com/watch?v=Nyls39XA0KI&t=1425), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2022-05.md)): Melbourne AWS User Group, 2022-05-25
