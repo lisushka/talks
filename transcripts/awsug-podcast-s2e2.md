@@ -30,7 +30,7 @@ MATT: Pop the- pop the, pop the champagne, everybody's problems are solved, ah, 
 
 JASON: [laughs]
 
-MATT: Maybe- maybe not. Maybe not
+MATT: Maybe- maybe not. Maybe not.
 
 ARJEN: Maybe not.
 
