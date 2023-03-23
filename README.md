@@ -28,8 +28,8 @@ The talks in this section rely on extensive background research, and sometimes p
 
 This is a list of all of the panel events that I've been involved in.  The list of names is the other people who were on the panel with me, and their names link to their public profiles.
 
-- **re:Invent 2022 In Review** with [Bojan Zivic](https://twitter.com/janvanbo), [Stephen Sennett](https://twitter.com/ssennettau), and [Matthew Gillard](https://twitter.com/mattgillard): ([video](https://www.youtube.com/watch?v=wfNZSWrpDEE&t=1463), [transcript](https://github.com/lisushka/talks/blob/main/transcripts/reinvent-2022-panel.md)) Melbourne AWS User Group, 2023-01-25
-- **Nothing About Us Without Us! Challenging companies and assistive technologies to do better** with [Florian Beijers](https://twitter.com/zersiax) and [Ben Mustill-Rose](https://twitter.com/bmustillrose): ([video, open captions on live delay](https://www.youtube.com/watch?v=eYKe6si3Q9Y)) Accessibility Manchester, 2020-12-01
+- **re:Invent 2022 In Review** with [Bojan Zivic](https://twitter.com/janvanbo), [Stephen Sennett](https://twitter.com/ssennettau), and [Matthew Gillard](https://twitter.com/mattgillard): ([video](https://youtube.com/watch?v=wfNZSWrpDEE&t=1463), [transcript](https://github.com/lisushka/talks/blob/main/transcripts/reinvent-2022-panel.md)) Melbourne AWS User Group, 2023-01-25
+- **Nothing About Us Without Us! Challenging companies and assistive technologies to do better** with [Florian Beijers](https://twitter.com/zersiax) and [Ben Mustill-Rose](https://twitter.com/bmustillrose): ([video, open captions on live delay](https://youtube.com/watch?v=eYKe6si3Q9Y)) Accessibility Manchester, 2020-12-01
 
 ## Workshops
 
@@ -43,7 +43,7 @@ These are hands-on workshops that you can complete in your own time.  The link w
 
 The talks in this section are generally 15 to 20 minutes long, with minimal background research involved.
 
-- [**Serverless disaster recovery**](https://www.youtube.com/watch?v=3ZuIwRs5Q50) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/serverless-dr.md)): Melbourne Serverless Meetup, 2023-02-09
+- [**Serverless disaster recovery**](https://youtube.com/watch?v=3ZuIwRs5Q50) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/serverless-dr.md)): Melbourne Serverless Meetup, 2023-02-09
 - [**Securing CDK bootstrap stacks**](https://youtube.com/watch?v=1ZHmD9fMCpM&t=4667) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/secure-cdk-bootstrap.md)): Melbourne AWS User Group, 2022-10-26
 - [**Using Infrastructure as Code tools to define ownership and responsibility**](https://youtube.com/watch?v=EalSppnCvbE&t=2934) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/iac-org-responsibility.md)): Melbourne AWS User Group, 2022-06-29; Infrastructure Coders, 2022-07-12
 - [**Disaster recovery in the cloud**](https://youtube.com/watch?v=p63iv6Z9N6Y&t=5924) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/disaster-recovery.md)):  Melbourne AWS User Group, 2022-04-27
@@ -58,11 +58,11 @@ The talks in this section are generally 15 to 20 minutes long, with minimal back
 ## Interviews and Podcasts
 
 - **Melbourne AWS User Group Podcast**:
-  - [Season 2, Episode 2](https://www.youtube.com/watch?v=F3WNg4MMwTg) with [Matthew Merriel](https://twitter.com/NeutralPenguin), [Arjen Schwarz](https://twitter.com/ArjenSchwarz), and [Jason Wood](https://twitter.com/sheriff6410) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/awsug-podcast-s2e2.md)), 2023-02-06
-- [**What's New in AWS - February 2023**](https://youtube.com/watch?v=dYQkMA0_IS0&t=487), with [Jason Wood](https://twitter.com/sheriff6410) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2023-02.md)): Melbourne AWS User Group, 2023-02-22
+  - [Season 2, Episode 2](https://youtube.com/watch?v=F3WNg4MMwTg) with [Matthew Merriel](https://twitter.com/NeutralPenguin), [Arjen Schwarz](https://twitter.com/ArjenSchwarz), and [Jason Wood](https://twitter.com/sheriff6410) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/awsug-podcast-s2e2.md)), 2023-02-06
+- [**What's New in AWS - February 2023**](https://wyoutube.com/watch?v=Ab0EMSKHiyc&t=538), with [Jason Wood](https://twitter.com/sheriff6410) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2023-02.md)): Melbourne AWS User Group, 2023-02-22
 - [**What's New in AWS - September 2022**](https://youtube.com/watch?v=dYQkMA0_IS0&t=487), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2022-09.md)): Melbourne AWS User Group, 2022-09-28
 - [**What's New in AWS - July 2022**](https://youtube.com/watch?v=sjKzPVz3sII&t=1610), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2022-07.md)): Melbourne AWS User Group, 2022-07-27
-- [**What's New in AWS - May 2022**](https://www.youtube.com/watch?v=Nyls39XA0KI&t=1425), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2022-05.md)): Melbourne AWS User Group, 2022-05-25
+- [**What's New in AWS - May 2022**](https://youtube.com/watch?v=Nyls39XA0KI&t=1425), with [Arjen Schwarz](https://twitter.com/ArjenSchwarz) ([transcript](https://github.com/lisushka/talks/blob/main/transcripts/aws-whatsnew-2022-05.md)): Melbourne AWS User Group, 2022-05-25
 
 ## Blog Posts
 
