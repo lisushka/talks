@@ -13,6 +13,7 @@ Hello! This repository is a source of truth for all of the presentations and wor
 
 The talks in this section rely on extensive background research, and sometimes personal experience.  The Sources links go to separate repositories, with links to recordings of the talk and references that I used while putting it together.
 
+- **Running Linux on the Desktop: a 20-year retrospective**: [sources](https://github.com/lisushka/ldretro)
 - **Stop the Bulldozers: Hardening the AWS CDK deployment process**: [source code](https://github.com/lisushka/cdk-bootstrap-quirks)
 - **Cyborg Security**: [sources](https://github.com/lisushka/cyborgs)
 - **Mobile Mindset**: [sources](https://github.com/lisushka/mobile-mindset)
